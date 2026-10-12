@@ -3963,6 +3963,41 @@ img{max-width:100%;height:auto}
 </style>
 <style id="hero-final-fix">.hero-mockup{position:relative!important;isolation:isolate!important;overflow:hidden!important;background:#020712!important}.hero-mockup:before{content:""!important;position:absolute!important;inset:0!important;z-index:0!important;background:linear-gradient(90deg,rgba(1,5,13,.88),rgba(1,8,20,.54) 34%,rgba(0,10,25,.10) 68%,rgba(1,5,13,.34)),url("assets/Cinematic%20Nighttime%20Tech%20Workspace%20Portrait.png") center/cover no-repeat!important;transform:none!important}.hero-mockup:after{z-index:1!important}.hero-mockup .hero-backdrop,.hero-mockup .hero-visual{display:none!important}.hero-mockup .hero-inner{position:relative!important;z-index:3!important}@media(max-width:760px){.hero-mockup:before{background:linear-gradient(180deg,rgba(1,5,13,.16),rgba(1,5,13,.30) 38%,rgba(1,5,13,.88)),url("assets/Cinematic%20Nighttime%20Tech%20Workspace%20Portrait.png") center top/cover no-repeat!important}}</style>
 <style id="loading-performance-tune">html{scroll-behavior:smooth}#work,#evidence,#case-studies,#experience,#education,#toolkit,footer{content-visibility:auto;contain-intrinsic-size:auto 800px}img{max-width:100%}</style>
+<style id="toolkit-full-bleed-hero">
+/* Toolkit hero is a full-bleed editorial banner, not a contained card */
+#toolkit .toolkit-hero-head{
+  width:100vw!important;
+  max-width:none!important;
+  margin-left:calc(50% - 50vw)!important;
+  margin-right:0!important;
+  min-height:360px!important;
+  padding:70px max(32px,calc((100vw - var(--max)) / 2)) 58px!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:
+    linear-gradient(90deg,rgba(5,10,17,.90) 0%,rgba(5,10,17,.72) 34%,rgba(5,10,17,.24) 72%,rgba(5,10,17,.48) 100%),
+    url("assets/Neon%20QA%20Night%20Workstation.png") center center/cover no-repeat!important;
+}
+#toolkit .toolkit-hero-head>div{
+  width:min(720px,100%)!important;
+  max-width:720px!important;
+}
+#toolkit .toolkit-hero-head:after{
+  height:1px!important;
+  left:0!important;
+  right:0!important;
+  background:linear-gradient(90deg,var(--blue),rgba(23,183,255,.18) 45%,transparent 100%)!important;
+}
+@media(max-width:760px){
+  #toolkit .toolkit-hero-head{
+    min-height:330px!important;
+    padding:54px 24px 48px!important;
+    margin-left:calc(50% - 50vw)!important;
+    background-position:center center!important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
