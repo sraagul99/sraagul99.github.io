@@ -4215,12 +4215,44 @@ img{max-width:100%;height:auto}
   }
 }
 </style>
+<style id="brand-logo-final">
+.site-header .brand-logo{
+  width:56px!important;
+  height:56px!important;
+  min-width:56px!important;
+  min-height:56px!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:16px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.site-header .brand-logo img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  border-radius:16px!important;
+}
+@media(max-width:760px){
+  .site-header .brand-logo{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    min-height:48px!important;
+    border-radius:14px!important;
+  }
+  .site-header .brand-logo img{border-radius:14px!important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="wrap header-inner">
-<a class="brand" href="#top" aria-label="Raagul Sivanathan home"><span class="brand-mark" aria-hidden="true"><b>R</b><i></i></span><span class="brand-text"><strong>RAAGUL SIVANATHAN</strong><small>QUALITY ENGINEERING</small></span></a>
+<a class="brand" href="#top" aria-label="Raagul Sivanathan home"><span class="brand-mark brand-logo" aria-hidden="true"><img src="assets/Glossy Neon Blue Monogram App Icon.png" alt=""></span><span class="brand-text"><strong>RAAGUL SIVANATHAN</strong><small>QUALITY ENGINEERING</small></span></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">☰</button>
 <nav class="nav" id="primary-nav" aria-label="Main navigation">
 <a href="#work">Selected work</a><a href="#evidence">Test evidence</a><a href="#case-studies">Case studies</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#toolkit">Toolkit</a>
