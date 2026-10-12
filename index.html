@@ -3082,6 +3082,39 @@ html[data-theme="light"] #toolkit .domain-list span{
   #education .education-arrow{display:none !important}
 }
 </style>
+/* Education title — Neon QA Study Workspace */
+#education > .section-head{
+  position:relative;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:365px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:70px max(28px,calc((100vw - var(--max)) / 2)) 58px;
+  border:0;
+  border-radius:0;
+  background:
+    linear-gradient(90deg,rgba(3,8,15,.97) 0%,rgba(3,8,15,.88) 25%,rgba(3,8,15,.50) 55%,rgba(3,8,15,.10) 100%),
+    url("assets/Neon%20QA%20Study%20Workspace.png") center center / cover no-repeat;
+  box-shadow:none;
+}
+#education > .section-head > div{
+  position:relative;
+  z-index:1;
+  max-width:700px;
+}
+#education > .section-head .section-kicker{margin-bottom:13px}
+#education > .section-head h2{margin-bottom:12px}
+@media(max-width:760px){
+  #education > .section-head{
+    min-height:330px;
+    padding:54px 24px 48px;
+    align-items:flex-end;
+    background-position:center;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
