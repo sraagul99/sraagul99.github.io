@@ -943,6 +943,119 @@ body:before{
     background-position:center;
   }
 }
+
+/* Recruiter-focused education redesign */
+#education .section-head{margin-bottom:12px}
+#education .education-intro{
+  max-width:680px;
+  margin:0 0 34px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
+}
+#education .education-list{
+  position:relative;
+  display:grid;
+  gap:12px;
+  border:0;
+  padding-left:0;
+}
+#education .education-list:before{
+  content:"";
+  position:absolute;
+  left:28px;
+  top:30px;
+  bottom:30px;
+  width:1px;
+  background:linear-gradient(180deg,var(--blue),rgba(74,169,255,.12));
+  opacity:.75;
+}
+#education .education-row{
+  position:relative;
+  display:grid;
+  grid-template-columns:72px 125px minmax(0,1fr) auto 28px;
+  gap:18px;
+  align-items:center;
+  min-height:112px;
+  padding:18px 22px;
+  border:1px solid rgba(89,174,255,.28);
+  border-radius:15px;
+  background:linear-gradient(100deg,rgba(7,18,31,.96),rgba(5,11,19,.82));
+  box-shadow:0 10px 30px rgba(0,0,0,.16);
+  overflow:hidden;
+}
+#education .education-row:before{
+  content:"";
+  position:absolute;
+  left:22px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--blue);
+  box-shadow:0 0 16px rgba(67,166,255,.65);
+}
+#education .education-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  margin-left:8px;
+  border:1px solid rgba(53,181,255,.7);
+  border-radius:10px;
+  color:var(--blue);
+  font-size:21px;
+  background:rgba(0,119,255,.055);
+}
+#education .education-date{
+  color:var(--blue);
+  font-weight:800;
+  font-size:10px;
+  white-space:nowrap;
+}
+#education .education-detail h3{font-size:16px;line-height:1.35;margin:0 0 7px}
+#education .education-detail p{font-size:11px;line-height:1.6;margin:0;color:var(--muted)}
+#education .education-detail a{font-size:10px;margin-top:8px}
+#education .education-kind{
+  justify-self:end;
+  padding:9px 13px;
+  border:1px solid rgba(52,183,255,.7);
+  border-radius:999px;
+  color:var(--blue);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.1em;
+  background:rgba(0,119,255,.04);
+}
+#education .education-certification .education-kind{
+  color:#ff4f8b;
+  border-color:rgba(255,79,139,.7);
+}
+#education .education-arrow{
+  color:var(--text);
+  font-size:22px;
+  opacity:.75;
+}
+#education .education-row:hover{
+  transform:translateY(-1px);
+  border-color:rgba(74,169,255,.58);
+  background:linear-gradient(100deg,rgba(9,25,42,.98),rgba(5,11,19,.9));
+}
+@media(max-width:760px){
+  #education .education-intro{font-size:11px;margin-bottom:24px}
+  #education .education-list:before{display:none}
+  #education .education-row{
+    grid-template-columns:48px 1fr auto;
+    gap:12px;
+    min-height:0;
+    padding:16px;
+  }
+  #education .education-row:before{display:none}
+  #education .education-icon{grid-column:1;grid-row:1 / span 2;margin:0;width:42px;height:42px}
+  #education .education-date{grid-column:2;grid-row:1}
+  #education .education-kind{grid-column:3;grid-row:1;padding:7px 9px}
+  #education .education-detail{grid-column:2 / -1;grid-row:2}
+  #education .education-arrow{display:none}
+}
 </style>
 
 <style id="polish-selected-work">
@@ -2916,11 +3029,12 @@ html[data-theme="light"] #toolkit .domain-list span{
 </div>
 </section><section class="surface-section" id="education"><div class="wrap section">
 <div class="section-head"><div><p class="section-kicker">04 / EDUCATION</p><h2>Education & certification.</h2></div></div>
+<div class="education-intro">A strong foundation in software engineering, supported by continuous professional learning and industry-recognized certification.</div>
 <ul class="education-list">
-<li class="education-row"><div class="education-date">2020 — 2024</div><div class="education-detail"><h3>Bachelor of Engineering (Hons) in Software Engineering</h3><p>Informatics Institute of Technology (IIT), affiliated with the University of Westminster</p></div><span class="education-kind">DEGREE</span></li>
-<li class="education-row"><div class="education-date">2019 — 2020</div><div class="education-detail"><h3>Foundation Certificate in Higher Education</h3><p>Informatics Institute of Technology (IIT)</p></div><span class="education-kind">FOUNDATION</span></li>
-<li class="education-row"><div class="education-date">2018 — 2019</div><div class="education-detail"><h3>Diploma in Information Technology (DITEC)</h3><p>ESOFT Metro Campus</p></div><span class="education-kind">DIPLOMA</span></li>
-<li class="education-row certification-row"><div class="education-date">SEP 2024</div><div class="education-detail"><h3>LambdaTest Test Automation Professional</h3><p>Professional certification</p><a href="https://www.linkedin.com/in/sraagul" target="_blank" rel="noreferrer">View LinkedIn profile ↗</a></div><span class="education-kind">CERTIFICATION</span></li>
+<li class="education-row education-certification"><span class="education-icon">◉</span><div class="education-date">SEP 2024</div><div class="education-detail"><h3>LambdaTest Test Automation Professional</h3><p>Professional certification validating automation testing knowledge and skills.</p><a href="https://www.linkedin.com/in/sraagul" target="_blank" rel="noreferrer">View LinkedIn profile ↗</a></div><span class="education-kind">CERTIFICATION</span><span class="education-arrow">→</span></li>
+<li class="education-row"><span class="education-icon">◆</span><div class="education-date">2020 — 2024</div><div class="education-detail"><h3>Bachelor of Engineering (Hons) in Software Engineering</h3><p>Informatics Institute of Technology (IIT), affiliated with the University of Westminster</p></div><span class="education-kind">DEGREE</span><span class="education-arrow">→</span></li>
+<li class="education-row"><span class="education-icon">▣</span><div class="education-date">2019 — 2020</div><div class="education-detail"><h3>Foundation Certificate in Higher Education</h3><p>Informatics Institute of Technology (IIT)</p></div><span class="education-kind">FOUNDATION</span><span class="education-arrow">→</span></li>
+<li class="education-row"><span class="education-icon">▤</span><div class="education-date">2018 — 2019</div><div class="education-detail"><h3>Diploma in Information Technology (DITEC)</h3><p>ESOFT Metro Campus</p></div><span class="education-kind">DIPLOMA</span><span class="education-arrow">→</span></li>
 </ul>
 </div></section>
 <section class="surface-section" id="toolkit"><div class="wrap section">
