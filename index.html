@@ -4109,6 +4109,45 @@ img{max-width:100%;height:auto}
   }
 }
 </style>
+<style id="true-viewport-hero">
+/* Hero must escape any ancestor width constraint and paint edge-to-edge. */
+#top.hero-mockup{
+  width:100vw!important;
+  max-width:none!important;
+  min-width:100vw!important;
+  margin-left:calc(50% - 50vw)!important;
+  margin-right:0!important;
+  padding-left:0!important;
+  padding-right:0!important;
+  border-radius:0!important;
+  left:auto!important;
+  right:auto!important;
+}
+#top.hero-mockup:before,
+#top.hero-mockup:after{
+  width:100%!important;
+  max-width:none!important;
+  left:0!important;
+  right:auto!important;
+}
+#top.hero-mockup .hero-inner{
+  width:min(1100px,calc(100% - 88px))!important;
+  max-width:1100px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+@media(max-width:760px){
+  #top.hero-mockup{
+    width:100vw!important;
+    min-width:100vw!important;
+    margin-left:calc(50% - 50vw)!important;
+  }
+  #top.hero-mockup .hero-inner{
+    width:calc(100% - 32px)!important;
+    max-width:none!important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
