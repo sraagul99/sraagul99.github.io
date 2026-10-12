@@ -2171,7 +2171,43 @@ html[data-theme="light"] #toolkit .domain-list span{
   position:relative;
   z-index:2;
 }
+</style><style id="hero-full-background-final">
+/* Existing workspace image is the single full-bleed background for the entire Hero. */
+.hero-mockup{
+  position:relative!important;
+  min-height:100svh!important;
+  height:100svh!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(90deg,rgba(1,5,13,.90) 0%,rgba(1,8,20,.68) 34%,rgba(0,10,25,.34) 64%,rgba(1,5,13,.72) 100%),
+    url("assets/Cinematic QA Engineer Tech Workspace (1).png") center center / cover no-repeat!important;
+}
+.hero-mockup:before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+  background:linear-gradient(180deg,rgba(1,5,13,.08),transparent 60%,rgba(1,5,13,.58) 100%)!important;
+  transform:none!important;
+}
+.hero-mockup:after{
+  z-index:1!important;
+  pointer-events:none!important;
+}
+.hero-mockup .hero-inner{
+  position:relative!important;
+  z-index:2!important;
+}
+.hero-mockup .hero-visual{
+  display:none!important;
+}
+.hero-mockup .hero-copy,
+.hero-mockup .hero-metrics{
+  position:relative!important;
+  z-index:3!important;
+}
 </style>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
