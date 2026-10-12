@@ -2526,6 +2526,40 @@ html[data-theme="light"] #toolkit .domain-list span{
   object-fit:contain;
 }
 </style>
+<style id="evidence-skeleton-redesign">
+#evidence{overflow:hidden}
+#evidence .evidence-section{position:relative}
+#evidence .evidence-heading{margin-bottom:30px;max-width:900px}
+#evidence .evidence-heading h2{font-size:clamp(34px,4vw,54px);line-height:1.02;letter-spacing:-.055em;margin:0}
+#evidence .evidence-heading h2 span{color:var(--blue)}
+#evidence .evidence-heading h2:after{content:"";display:block;width:76px;height:2px;margin-top:20px;background:linear-gradient(90deg,var(--blue),transparent)}
+#evidence .evidence-intro{max-width:720px;margin:17px 0 0;color:var(--muted);font-size:12px;line-height:1.8}
+#evidence .execution-grid{gap:18px}
+#evidence .execution-card{position:relative;min-height:330px;padding:26px 26px 22px;border:1px solid rgba(121,195,255,.25);border-radius:18px;background:linear-gradient(145deg,rgba(13,24,37,.92),rgba(5,12,21,.98));overflow:hidden}
+#evidence .execution-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 75%,rgba(0,157,255,.10),transparent 35%);pointer-events:none}
+#evidence .execution-card:hover{transform:translateY(-5px);border-color:rgba(0,174,255,.75);box-shadow:0 16px 40px rgba(0,132,255,.13)}
+#evidence .execution-top{position:relative;z-index:1}
+#evidence .execution-project{display:flex;align-items:center;gap:12px}
+#evidence .execution-badge{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid rgba(121,195,255,.35);border-radius:50%;background:rgba(0,153,255,.06);color:#eaf5ff;font:900 10px ui-monospace,SFMono-Regular,Consolas,monospace}
+#evidence .execution-type{font-size:9px}
+#evidence .execution-state{padding:8px 12px;border:1px solid rgba(116,240,228,.55);border-radius:999px;background:rgba(116,240,228,.035);font-size:9px}
+#evidence .execution-state i{width:7px;height:7px}
+#evidence .execution-card>strong{position:relative;z-index:1;display:block;margin-top:46px;font-size:58px;line-height:1;letter-spacing:-.065em}
+#evidence .execution-card>strong em{font-style:normal;color:var(--blue)}
+#evidence .execution-card h3{position:relative;z-index:1;font-size:17px;margin:14px 0 9px}
+#evidence .execution-card p{position:relative;z-index:1;font-size:11px;line-height:1.8;max-width:430px;margin-bottom:20px}
+#evidence .execution-link{position:relative;z-index:1;padding-top:14px;font-size:11px}
+#evidence .execution-link b{font-size:13px}
+#evidence .evidence-bottom{justify-content:flex-start;gap:12px;margin-top:16px;padding:13px 16px;border-color:rgba(121,195,255,.24);border-radius:12px;background:rgba(9,19,31,.76)}
+#evidence .evidence-info{display:inline-flex;flex:0 0 auto;width:24px;height:24px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:#06101b;font:900 12px ui-monospace,SFMono-Regular,Consolas,monospace}
+#evidence .evidence-bottom p{font-size:10px;max-width:none}
+@media(max-width:760px){
+#evidence .execution-grid{gap:12px}
+#evidence .execution-card{min-height:290px;padding:21px}
+#evidence .execution-card>strong{margin-top:32px;font-size:48px}
+#evidence .execution-state{padding:7px 9px}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -2566,14 +2600,35 @@ html[data-theme="light"] #toolkit .domain-list span{
 <article class="work-project featured"><div class="work-rail"><div class="work-icon logo-playwright"><img src="https://images.seeklogo.com/logo-png/48/1/playwright-logo-png_seeklogo-489584.png" alt="Playwright logo"></div><span>UI AUTOMATION</span><strong>01</strong></div><div class="work-main"><div class="featured-badge">FEATURED</div><h3>Playwright UI Automation</h3><p>TypeScript UI automation using Playwright Test and Page Object Model, with reusable end-to-end coverage and GitHub Actions CI execution.</p><div class="work-tags"><span>Playwright</span><span>TypeScript</span><span>POM</span><span>GitHub Actions</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/playwright-ui-automation/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Reusable Page Objects</li><li>Authentication &amp; navigation flows</li><li>Employee-management scenarios</li></ul></div></article>
 <article class="work-project"><div class="work-rail"><div class="work-icon logo-cypress" aria-label="Cypress logo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="5"/><text x="32" y="40" text-anchor="middle" fill="currentColor" font-size="22" font-family="Arial,sans-serif" font-weight="800">CY</text></svg></div><span>BDD AUTOMATION</span><strong>02</strong></div><div class="work-main"><h3>Cypress + Cucumber BDD</h3><p>Behaviour-driven browser automation using feature files and reusable step definitions to keep scenarios readable and repeatable.</p><div class="work-tags"><span>Cypress</span><span>Cucumber</span><span>Gherkin</span><span>TypeScript</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Gherkin feature scenarios</li><li>Reusable Cucumber steps</li><li>Automated CI execution</li></ul></div></article>
 <article class="work-project"><div class="work-rail"><div class="work-icon logo-postman"><img src="assets/postman.jpg" alt="Postman logo"></div><span>API TESTING</span><strong>03</strong></div><div class="work-main"><h3>Postman + Newman API Testing</h3><p>API testing with response assertions and command-line execution, wired into CI to make repeatable API checks part of the workflow.</p><div class="work-tags"><span>Postman</span><span>Newman</span><span>REST APIs</span><span>CI</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/postman-newman-api-testing/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Request / response validation</li><li>Assertion-driven checks</li><li>CLI execution in GitHub Actions</li></ul></div></article></div><p class="work-note">ⓘ These repositories use public demo applications and APIs for portfolio practice. Test behaviour may change if those services are updated.</p></section>
-<section class="surface-section" id="evidence"><div class="wrap section">
-<div class="section-head"><div><p class="section-kicker">02 / VERIFIED EXECUTION EVIDENCE</p><h2>Tested, executed, inspectable.</h2></div></div>
-<div class="execution-grid">
-<a class="execution-card" href="https://github.com/sraagul99/playwright-ui-automation/actions/runs/38159712112" target="_blank" rel="noreferrer"><div class="execution-top"><span class="execution-type">PLAYWRIGHT / UI</span><span class="execution-state"><i></i> SUCCESS</span></div><strong>11 / 11</strong><h3>Browser tests passed</h3><p>Authentication, field validation, employee workflow, and core navigation in the recorded Chromium run.</p><span class="execution-link">Inspect run logs ↗</span></a>
-<a class="execution-card" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions/runs/38160640406" target="_blank" rel="noreferrer"><div class="execution-top"><span class="execution-type">CYPRESS / BDD</span><span class="execution-state"><i></i> SUCCESS</span></div><strong>12 / 12</strong><h3>BDD scenarios passed</h3><p>Gherkin-based navigation and employee-management coverage in the recorded CI run.</p><span class="execution-link">Inspect run logs ↗</span></a>
-<a class="execution-card" href="https://github.com/sraagul99/postman-newman-api-testing/actions/runs/38160228089" target="_blank" rel="noreferrer"><div class="execution-top"><span class="execution-type">POSTMAN / NEWMAN</span><span class="execution-state"><i></i> SUCCESS</span></div><strong>24 / 24</strong><h3>API assertions passed</h3><p>Seven requests executed, zero assertion failures, and a JUnit report generated for the recorded run.</p><span class="execution-link">Inspect run and report ↗</span></a>
+<section class="surface-section" id="evidence"><div class="wrap section evidence-section">
+<div class="evidence-heading">
+  <div>
+    <p class="section-kicker">02 / VERIFIED EXECUTION EVIDENCE</p>
+    <h2>Tested, executed, <span>inspectable.</span></h2>
+    <p class="evidence-intro">Real test executions from public demo environments, showing practical QA coverage — not just theory.</p>
+  </div>
 </div>
-<div class="evidence-bottom"><p>Snapshot from 11 Oct 2026. These are individual runs against public demo environments, not a guarantee of future results or a performance benchmark.</p></div>
+<div class="execution-grid">
+<a class="execution-card" href="https://github.com/sraagul99/playwright-ui-automation/actions/runs/38159712112" target="_blank" rel="noreferrer">
+  <div class="execution-top"><div class="execution-project"><span class="execution-badge">PW</span><span class="execution-type">PLAYWRIGHT / UI</span></div><span class="execution-state"><i></i> SUCCESS</span></div>
+  <strong>11 <em>/</em> 11</strong><h3>Browser tests passed</h3>
+  <p>Authentication, field validation, employee workflow, and core navigation in the recorded Chromium run.</p>
+  <span class="execution-link">Inspect run logs <b>↗</b></span>
+</a>
+<a class="execution-card" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions/runs/38160640406" target="_blank" rel="noreferrer">
+  <div class="execution-top"><div class="execution-project"><span class="execution-badge">CY</span><span class="execution-type">CYPRESS / BDD</span></div><span class="execution-state"><i></i> SUCCESS</span></span></div>
+  <strong>12 <em>/</em> 12</strong><h3>BDD scenarios passed</h3>
+  <p>Gherkin-based navigation and employee-management coverage in the recorded CI run.</p>
+  <span class="execution-link">Inspect run logs <b>↗</b></span>
+</a>
+<a class="execution-card" href="https://github.com/sraagul99/postman-newman-api-testing/actions/runs/38160228089" target="_blank" rel="noreferrer">
+  <div class="execution-top"><div class="execution-project"><span class="execution-badge">PM</span><span class="execution-type">POSTMAN / NEWMAN</span></div><span class="execution-state"><i></i> SUCCESS</span></div>
+  <strong>24 <em>/</em> 24</strong><h3>API assertions passed</h3>
+  <p>Seven requests executed, zero assertion failures, and a JUnit report generated for the recorded run.</p>
+  <span class="execution-link">Inspect run and report <b>↗</b></span>
+</a>
+</div>
+<div class="evidence-bottom"><span class="evidence-info">i</span><p>Snapshot from 11 Oct 2026. These are individual runs against public demo environments, not a guarantee of future results or a performance benchmark.</p></div>
 </div></section>
 
 <section class="surface-section" id="case-studies"><div class="wrap section">
