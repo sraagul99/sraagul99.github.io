@@ -2349,7 +2349,7 @@ html[data-theme="light"] #toolkit .domain-list span{
 .hero-mockup{position:relative;isolation:isolate;display:block;width:100%;max-width:none;min-height:100svh;margin:0;padding:145px 0 55px;overflow:hidden;background:#020712}
 .hero-mockup:before{content:"";position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(1,5,13,.93) 0%,rgba(1,8,20,.72) 36%,rgba(0,10,25,.44) 64%,rgba(1,5,13,.76) 100%),url("assets/hero-bg.jpg"),radial-gradient(ellipse at 68% 42%,rgba(0,107,255,.3),transparent 35%);background-size:cover;background-position:center;background-repeat:no-repeat;transform:scale(1.02)}
 .hero-mockup:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(1,5,13,.06),transparent 66%,#020712 100%),linear-gradient(90deg,transparent 0 49.8%,rgba(0,151,255,.06) 50%,transparent 50.2%)}
-.hero-inner{width:min(1400px,calc(100% - 88px));min-height:calc(100svh - 200px);margin:0 auto;display:grid;grid-template-columns:minmax(360px,.78fr) minmax(520px,1.22fr);align-items:center;gap:24px}
+.hero-inner{width:min(1100px,calc(100% - 88px));min-height:calc(100svh - 200px);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:24px}
 .hero-copy{position:relative;z-index:3;max-width:560px;padding:18px 0 20px 24px}
 .hero-intro{margin:0 0 3px;color:#e7edf8;font-size:16px;font-weight:500;letter-spacing:.18em}
 .hero-mockup .hero-name,.hero-mockup h1{max-width:650px;margin:0 0 5px;font-size:clamp(64px,6.3vw,94px);line-height:.98;letter-spacing:-.065em;font-weight:850;color:#fff}
@@ -2416,33 +2416,6 @@ html[data-theme="light"] #toolkit .domain-list span{
         <a href="mailto:raagul.s@outlook.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4.7 7H4v.6l8 5.5 8-5.5V7h-.7Z"/></svg></a>
         <a href="tel:+94765394746" aria-label="Call Raagul"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.5 9.4 2a1.6 1.6 0 0 1 1.8 1.1l1.1 3.2a1.6 1.6 0 0 1-.4 1.7L10 9.8a14.5 14.5 0 0 0 4.2 4.2l1.8-1.9a1.6 1.6 0 0 1 1.7-.4l3.2 1.1a1.6 1.6 0 0 1 1.1 1.8l-.5 2.8a2 2 0 0 1-2 1.7C10.7 19.9 4.1 13.3 4.9 4.5a2 2 0 0 1 1.7-2Z"/></svg></a>
       </div>
-    </div>
-    <div class="hero-stage" aria-label="Quality assurance dashboard visual">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-stage-grid" aria-hidden="true"></div>
-      <div class="hero-core" aria-hidden="true"><span>QA</span><small>QUALITY<br>ENGINEERING</small></div>
-      <article class="mock-card automated-card">
-        <h2>AUTOMATED TESTS</h2>
-        <div class="test-row"><span class="test-check">✓</span><span>API Tests</span><b>2.1s</b></div>
-        <div class="test-row"><span class="test-check">✓</span><span>UI Tests</span><b>4.3s</b></div>
-        <div class="test-row"><span class="test-check">✓</span><span>Regression Tests</span><b>6.8s</b></div>
-        <div class="test-row"><span class="test-check">✓</span><span>Performance Tests</span><b>3.2s</b></div>
-        <div class="test-summary"><div><small>Total Tests</small><strong>142</strong></div><div class="pass-ring"><b>98%</b><small>Pass Rate</small></div></div>
-      </article>
-      <article class="mock-card api-card">
-        <div class="api-tabs"><b>Request</b><span>Response</span><span>Tests</span></div>
-        <div class="api-endpoint"><b>POST</b><span>/api/auth/login</span></div>
-        <pre><span>1</span> { 
-<span>2</span>   <i>"username"</i>: <em>"testuser"</em>,
-<span>3</span>   <i>"password"</i>: <em>"********"</em>
-<span>4</span> }</pre>
-        <div class="api-footer"><span>200 OK · 184 ms</span><b>PASS ✓</b></div>
-      </article>
-      <article class="mock-card mindset-card">
-        <h2>QA MINDSET</h2>
-        <div><span>◎</span> Quality Focused</div><div><span>⚙</span> Problem Solver</div><div><span>↗</span> Continuous Learner</div><div><span>◉</span> Team Collaborator</div>
-      </article>
-      <div class="stack-labels" aria-hidden="true"><span>TEST AUTOMATION</span><span>API TESTING</span><span>QUALITY ASSURANCE</span><span>CLEAN CODE</span></div>
     </div>
   </div>
 </section>
