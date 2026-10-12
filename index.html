@@ -14,6 +14,23 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Raagul Sivanathan","jobTitle":"Quality Assurance Engineer","url":"https://sraagul99.github.io/","sameAs":["https://www.linkedin.com/in/sraagul","https://github.com/sraagul99"],"email":"mailto:raagul.s@outlook.com","alumniOf":{"@type":"CollegeOrUniversity","name":"Informatics Institute of Technology"}}
+
+/* Lightweight reveal — respects reduced motion */
+(()=>{
+  const items=document.querySelectorAll('.surface-section,.work-project,.experience-card,.education-row,.skill-card');
+  if(!items.length || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  items.forEach(el=>{el.style.opacity='0';el.style.transform='translateY(10px)';el.style.transition='opacity .55s ease,transform .55s ease'});
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.style.opacity='1';
+        entry.target.style.transform='none';
+        io.unobserve(entry.target);
+      }
+    });
+  },{threshold:.08,rootMargin:'0px 0px -35px'});
+  items.forEach(el=>io.observe(el));
+})();
 </script>
 <style>
 :root{color-scheme:dark;--bg:#080b11;--surface:#0d131d;--surface2:#111a27;--surface3:#152132;--line:rgba(166,195,230,.14);--line2:rgba(166,195,230,.26);--text:#eff5ff;--muted:#a1afc2;--dim:#738399;--blue:#79c3ff;--cyan:#74f0e4;--red:#ff7188;--green:#83e6b8;--max:1180px;--radius:17px}
@@ -1230,6 +1247,178 @@ html[data-theme="light"] .hero-lede strong{color:#21384f}
 .hero-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;opacity:.92}
 .hero-inner{position:static;z-index:auto}
 .hero-copy{position:relative;z-index:3}
+
+/* Recruiter polish pass — non-image UI */
+:root{
+  --recruiter-glow:rgba(0,174,255,.22);
+  --recruiter-blue:#17b7ff;
+  --recruiter-blue-soft:#79c3ff;
+  --recruiter-panel:rgba(10,18,28,.82);
+}
+:focus-visible{outline:2px solid var(--recruiter-blue);outline-offset:3px}
+::selection{background:rgba(23,183,255,.28)}
+.surface-section{
+  position:relative;
+  isolation:isolate;
+  border-block:1px solid rgba(121,195,255,.06);
+}
+.surface-section:before{
+  content:"";
+  position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(circle at 50% 0,rgba(23,183,255,.055),transparent 34%);
+}
+.section-kicker,.eyebrow{
+  text-shadow:0 0 18px rgba(23,183,255,.16);
+}
+.section-head h2,.evidence-heading h2{
+  text-wrap:balance;
+}
+.section-head h2 span,.evidence-heading h2 span{
+  color:var(--recruiter-blue);
+}
+#case-studies .case-study-grid{margin-top:24px}
+#case-studies .case-study-card{
+  position:relative;
+  min-height:330px;
+  padding:38px 40px;
+  overflow:hidden;
+  border:1px solid rgba(121,195,255,.18);
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 86% 22%,rgba(23,183,255,.09),transparent 24%),
+    linear-gradient(145deg,rgba(16,28,42,.96),rgba(7,12,19,.96));
+  box-shadow:0 22px 70px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.035);
+  transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease;
+}
+#case-studies .case-study-card:after{
+  content:"";
+  position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--recruiter-blue),rgba(23,183,255,.08));
+  box-shadow:0 0 24px rgba(23,183,255,.35);
+}
+#case-studies .case-study-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(23,183,255,.48);
+  box-shadow:0 28px 85px rgba(0,0,0,.3),0 0 35px rgba(23,183,255,.07);
+}
+#case-studies .case-study-card h3{
+  max-width:780px;
+  margin:34px 0 16px;
+  font-size:clamp(30px,4vw,54px);
+  line-height:1.04;
+  letter-spacing:-.055em;
+}
+#case-studies .case-study-card>p{
+  max-width:760px;
+  color:#9eb0c7;
+  font-size:13px;
+  line-height:1.9;
+}
+#case-studies .execution-link{
+  display:inline-flex;
+  align-items:center;
+  margin-top:28px;
+  padding:11px 15px;
+  border:1px solid rgba(23,183,255,.55);
+  border-radius:9px;
+  color:#dff5ff;
+  background:rgba(23,183,255,.055);
+  box-shadow:0 0 18px rgba(23,183,255,.06);
+  transition:background .2s,border-color .2s,transform .2s;
+}
+#case-studies .case-study-card:hover .execution-link{
+  background:rgba(23,183,255,.11);
+  border-color:rgba(23,183,255,.85);
+  transform:translateX(2px);
+}
+#experience .work-history{gap:18px}
+#experience .experience-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(121,195,255,.15);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(15,24,36,.9),rgba(8,13,20,.88));
+  box-shadow:0 18px 50px rgba(0,0,0,.14);
+  transition:border-color .25s,transform .25s,box-shadow .25s;
+}
+#experience .experience-card:before{
+  content:"";
+  position:absolute;left:0;top:22px;bottom:22px;width:2px;
+  background:linear-gradient(180deg,var(--recruiter-blue),transparent);
+  box-shadow:0 0 18px rgba(23,183,255,.22);
+}
+#experience .experience-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(23,183,255,.32);
+  box-shadow:0 24px 65px rgba(0,0,0,.22);
+}
+#experience .company-mark{
+  box-shadow:0 0 20px rgba(23,183,255,.08);
+}
+#education .education-list{
+  border:1px solid rgba(121,195,255,.13);
+  border-radius:18px;
+  overflow:hidden;
+  background:rgba(10,17,26,.58);
+}
+#education .education-row{
+  transition:background .2s,padding-left .2s;
+}
+#education .education-row:hover{
+  background:rgba(23,183,255,.035);
+  padding-left:22px;
+}
+#education .education-kind{
+  border-color:rgba(23,183,255,.2);
+  color:#8bcfff;
+  background:rgba(23,183,255,.035);
+}
+#toolkit .skills-grid{gap:14px}
+#toolkit .skill-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(121,195,255,.14);
+  border-radius:16px;
+  background:linear-gradient(145deg,rgba(15,24,36,.9),rgba(8,13,20,.84));
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+#toolkit .skill-card:before{
+  content:"";
+  position:absolute;left:0;top:0;width:100%;height:2px;
+  background:linear-gradient(90deg,var(--recruiter-blue),transparent 72%);
+  opacity:.72;
+}
+#toolkit .skill-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(23,183,255,.34);
+  box-shadow:0 18px 45px rgba(0,0,0,.18),0 0 24px rgba(23,183,255,.045);
+}
+#toolkit .skill-tags span{
+  transition:border-color .18s,background .18s,color .18s;
+}
+#toolkit .skill-tags span:hover{
+  color:#eaf8ff;
+  border-color:rgba(23,183,255,.4);
+  background:rgba(23,183,255,.06);
+}
+#toolkit .domain-knowledge{
+  margin-top:16px;
+  border:1px solid rgba(121,195,255,.12);
+  border-radius:16px;
+  background:rgba(10,17,26,.55);
+}
+.footer{
+  border-top:1px solid rgba(121,195,255,.12);
+  background:linear-gradient(180deg,rgba(7,11,17,.72),#06090e);
+}
+.footer-brand i{color:var(--recruiter-blue)}
+.footer-links a{transition:color .2s,transform .2s}
+.footer-links a:hover{color:var(--recruiter-blue);transform:translateY(-1px)}
+@media(max-width:760px){
+  #case-studies .case-study-card{min-height:0;padding:27px 24px}
+  #case-studies .case-study-card h3{margin-top:24px;font-size:34px}
+  #case-studies .case-study-card>p{font-size:11px}
+}
 </style>
 
 <style id="polish-selected-work">
