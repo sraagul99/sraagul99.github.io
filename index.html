@@ -2739,7 +2739,70 @@ html[data-theme="light"] #toolkit .domain-list span{
   #work .work-note:before{flex-basis:26px;width:26px;height:26px}
 }
 </style>
-</head>
+<style id="shared-evidence-note-design">
+#work .work-note,
+#evidence .evidence-bottom{
+  width:100%;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:16px 0 0;
+  padding:12px 16px;
+  border:1px solid rgba(0,153,255,.7);
+  border-radius:18px;
+  background:rgba(4,16,28,.72);
+  color:#9fb5cc;
+  font-size:13px;
+  line-height:1.5;
+  box-shadow:inset 0 0 22px rgba(0,125,255,.05);
+}
+#work .work-note{
+  max-width:none;
+}
+#work .work-note:before,
+#evidence .evidence-info{
+  content:"i";
+  display:inline-flex;
+  flex:0 0 32px;
+  width:32px;
+  height:32px;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#58b8ff;
+  color:#06101b;
+  font:900 15px/1 ui-monospace,SFMono-Regular,Consolas,monospace;
+  box-shadow:0 0 18px rgba(0,174,255,.16);
+}
+#work .work-note{color:#9fb5cc}
+#work .work-note:before{position:static}
+#evidence .evidence-bottom{justify-content:flex-start;gap:14px}
+#evidence .evidence-info{font-size:15px}
+#evidence .evidence-bottom p{
+  margin:0;
+  max-width:none;
+  color:#9fb5cc;
+  font-size:13px;
+  line-height:1.5;
+}
+@media(max-width:760px){
+  #work .work-note,
+  #evidence .evidence-bottom{
+    align-items:flex-start;
+    padding:11px 13px;
+    gap:11px;
+    font-size:11px;
+  }
+  #work .work-note:before,
+  #evidence .evidence-info{
+    flex-basis:28px;
+    width:28px;
+    height:28px;
+    font-size:13px;
+  }
+}
+</style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -2778,7 +2841,7 @@ html[data-theme="light"] #toolkit .domain-list span{
 <section class="wrap block" id="work"><div class="work-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Proof <span>in the practice.</span></h2><p class="work-intro">A collection of real-world QA and test automation projects that demonstrate my approach, skills and the value I bring to a team.</p></div></div><div class="work-projects">
 <article class="work-project featured"><div class="work-rail"><div class="work-icon logo-playwright"><img src="https://images.seeklogo.com/logo-png/48/1/playwright-logo-png_seeklogo-489584.png" alt="Playwright logo"></div><span>UI AUTOMATION</span><strong>01</strong></div><div class="work-main"><div class="featured-badge">FEATURED</div><h3>Playwright UI Automation</h3><p>TypeScript UI automation using Playwright Test and Page Object Model, with reusable end-to-end coverage and GitHub Actions CI execution.</p><div class="work-tags"><span>Playwright</span><span>TypeScript</span><span>POM</span><span>GitHub Actions</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/playwright-ui-automation/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Reusable Page Objects</li><li>Authentication &amp; navigation flows</li><li>Employee-management scenarios</li></ul></div></article>
 <article class="work-project"><div class="work-rail"><div class="work-icon logo-cypress" aria-label="Cypress logo"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" stroke-width="5"/><text x="32" y="40" text-anchor="middle" fill="currentColor" font-size="22" font-family="Arial,sans-serif" font-weight="800">CY</text></svg></div><span>BDD AUTOMATION</span><strong>02</strong></div><div class="work-main"><h3>Cypress + Cucumber BDD</h3><p>Behaviour-driven browser automation using feature files and reusable step definitions to keep scenarios readable and repeatable.</p><div class="work-tags"><span>Cypress</span><span>Cucumber</span><span>Gherkin</span><span>TypeScript</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Gherkin feature scenarios</li><li>Reusable Cucumber steps</li><li>Automated CI execution</li></ul></div></article>
-<article class="work-project"><div class="work-rail"><div class="work-icon logo-postman"><img src="assets/postman.jpg" alt="Postman logo"></div><span>API TESTING</span><strong>03</strong></div><div class="work-main"><h3>Postman + Newman API Testing</h3><p>API testing with response assertions and command-line execution, wired into CI to make repeatable API checks part of the workflow.</p><div class="work-tags"><span>Postman</span><span>Newman</span><span>REST APIs</span><span>CI</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/postman-newman-api-testing/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Request / response validation</li><li>Assertion-driven checks</li><li>CLI execution in GitHub Actions</li></ul></div></article></div><p class="work-note">ⓘ These repositories use public demo applications and APIs for portfolio practice. Test behaviour may change if those services are updated.</p></section>
+<article class="work-project"><div class="work-rail"><div class="work-icon logo-postman"><img src="assets/postman.jpg" alt="Postman logo"></div><span>API TESTING</span><strong>03</strong></div><div class="work-main"><h3>Postman + Newman API Testing</h3><p>API testing with response assertions and command-line execution, wired into CI to make repeatable API checks part of the workflow.</p><div class="work-tags"><span>Postman</span><span>Newman</span><span>REST APIs</span><span>CI</span></div><div class="work-actions"><a class="primary-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/postman-newman-api-testing/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a><a class="github-action" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer" aria-label="GitHub repository"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.3 11.3 0 0 0 8.43 22.9c.57.1.78-.25.78-.55v-2.16c-3.18.69-3.85-1.35-3.85-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.74 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.53-2.54-.29-5.2-1.27-5.2-5.65 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.45.11-3.03 0 0 .96-.31 3.14 1.17A10.8 10.8 0 0 1 12 6.1c.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.74.11 3.03.73.8 1.18 1.82 1.18 3.07 0 4.39-2.67 5.36-5.22 5.64.41.36.77 1.08.77 2.18v3.23c0 .3.21.66.79.55A11.3 11.3 0 0 0 12 .7Z"/></svg></a></div></div><div class="work-capabilities"><p>WHAT I BUILT</p><ul><li>Request / response validation</li><li>Assertion-driven checks</li><li>CLI execution in GitHub Actions</li></ul></div></article></div><p class="work-note">These repositories use public demo applications and APIs for portfolio practice. Test behaviour may change if those services are updated.</p></section>
 <section class="surface-section" id="evidence"><div class="wrap section evidence-section">
 <div class="evidence-heading">
   <div>
