@@ -2567,7 +2567,56 @@ html[data-theme="light"] #toolkit .domain-list span{
 #evidence .execution-type,#evidence .execution-link{color:#69bfff}
 #evidence .execution-state{color:#72ead1}
 #evidence .section-kicker{color:#00d9ff}
-</style></head>
+</style><style id="evidence-image-composition">
+#evidence{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,rgba(3,8,15,.96) 0%,rgba(3,8,15,.72) 34%,rgba(3,8,15,.18) 67%,rgba(3,8,15,.38) 100%),
+    url("assets/Neon%20QA%20Automation%20Workspace.png") center center / cover no-repeat;
+}
+#evidence:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(3,8,15,.12) 0%,rgba(3,8,15,.08) 42%,rgba(3,8,15,.86) 100%);
+  pointer-events:none;
+}
+#evidence .evidence-section{position:relative;z-index:1}
+#evidence .execution-card{
+  background:
+    linear-gradient(90deg,rgba(4,13,23,.93) 0%,rgba(4,13,23,.72) 52%,rgba(4,13,23,.30) 100%),
+    var(--card-art) center center / cover no-repeat;
+  background-blend-mode:normal;
+}
+#evidence .execution-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(2,8,15,.22),rgba(2,8,15,.04));
+  pointer-events:none;
+  z-index:0;
+}
+#evidence .execution-card>*{position:relative;z-index:2}
+#evidence .execution-card:nth-child(1){
+  --card-art:url("assets/Neon%20Playwright%20Test%20Lab.png");
+}
+#evidence .execution-card:nth-child(2){
+  --card-art:url("assets/Neon%20Cypress%20BDD%20Testing%20Workspace.png");
+}
+#evidence .execution-card:nth-child(3){
+  --card-art:url("assets/Neon%20Postman%20API%20Testing%20Workspace.png");
+}
+#evidence .execution-card:nth-child(1){border-color:rgba(0,190,255,.62)}
+#evidence .execution-card:nth-child(2){border-color:rgba(0,190,255,.62)}
+#evidence .execution-card:nth-child(3){border-color:rgba(255,126,54,.58)}
+@media(max-width:760px){
+  #evidence{
+    background-position:center top;
+  }
+}
+</style>
+</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
