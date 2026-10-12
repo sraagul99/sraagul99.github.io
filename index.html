@@ -3731,6 +3731,113 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
   }
 }
 </style>
+<style id="responsive-layout-normalization">
+/* Responsive layout normalization — final override layer */
+html{overflow-x:hidden}
+body{overflow-x:hidden}
+img{max-width:100%;height:auto}
+.wrap{width:min(1180px,calc(100% - 64px));margin-inline:auto}
+
+@media (max-width:1100px){
+  .wrap{width:min(100% - 48px,1040px)}
+  .hero-mockup .hero-inner{width:min(100% - 48px,1040px)!important}
+  .work-projects{grid-template-columns:1fr!important}
+  .work-project.featured{grid-column:auto!important}
+  .case-study-grid{grid-template-columns:1fr!important}
+  .case-study-feature{grid-template-columns:1fr!important}
+  .case-study-visual{min-height:360px}
+  .experience-body{grid-template-columns:1fr!important}
+  .experience-side{border-top:1px solid rgba(120,170,220,.16);padding-top:24px}
+  .skills-grid.toolkit-grid{grid-template-columns:1fr 1fr!important}
+  .domain-list{grid-template-columns:1fr 1fr 1fr!important}
+}
+
+@media (max-width:900px){
+  .wrap{width:calc(100% - 40px)}
+  .hero-mockup{min-height:900px!important;height:auto!important}
+  .hero-mockup .hero-inner{width:calc(100% - 40px)!important;min-height:760px!important}
+  .hero-mockup .hero-copy{max-width:620px!important;transform:none!important;padding-left:0!important}
+  .hero-mockup .hero-metrics{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;margin-top:40px}
+  .hero-mockup .hero-visual{display:none!important}
+  .site-nav,.nav-inner{width:calc(100% - 40px)!important}
+  .education-row{grid-template-columns:72px 1fr!important;gap:18px!important}
+  .education-kind,.education-arrow{display:none!important}
+  .domain-list{grid-template-columns:1fr!important}
+  .footer-main{grid-template-columns:1.5fr 1fr 1fr!important}
+  .footer-connect{grid-column:auto!important}
+}
+
+@media (max-width:760px){
+  .wrap{width:calc(100% - 32px)}
+  .section{padding-block:72px!important}
+  .hero-mockup{min-height:880px!important;padding-top:82px!important}
+  .hero-mockup .hero-inner{width:calc(100% - 32px)!important;min-height:0!important;padding-bottom:48px!important}
+  .hero-mockup .hero-copy{max-width:100%!important}
+  .hero-mockup h1{font-size:clamp(48px,14vw,72px)!important;line-height:.94!important}
+  .hero-mockup .hero-lede{max-width:520px!important;font-size:14px!important}
+  .hero-mockup .hero-metrics .metrics{grid-template-columns:1fr 1fr!important;row-gap:0!important}
+  .hero-mockup .hero-metrics .metric{min-height:82px!important}
+  .work-project{padding:24px!important}
+  .work-rail{grid-template-columns:auto 1fr auto!important}
+  .evidence-grid{grid-template-columns:1fr!important}
+  .execution-card{min-height:0!important}
+  .case-study-visual{min-height:260px!important}
+  .experience-header{grid-template-columns:auto 1fr!important}
+  .employment-date{grid-column:2!important}
+  .experience-card{padding:24px!important}
+  .experience-highlights{padding-left:20px!important}
+  .experience-tags{gap:7px!important}
+  .education-row{grid-template-columns:1fr!important;gap:8px!important;padding:24px 0!important}
+  .education-icon{display:none!important}
+  .education-date{order:0!important}
+  .education-detail{order:1!important}
+  .skills-grid.toolkit-grid{grid-template-columns:1fr!important}
+  .toolkit-card{padding:24px!important}
+  .domain-card{min-height:180px!important}
+  .footer-main{grid-template-columns:1fr 1fr!important;gap:32px!important}
+  .footer-identity{grid-column:1/-1!important}
+  .footer-bottom{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .footer-top{justify-self:start!important}
+}
+
+@media (max-width:520px){
+  .wrap{width:calc(100% - 24px)}
+  .section{padding-block:58px!important}
+  .section-head h2,.work-heading h2{font-size:clamp(38px,11vw,54px)!important;line-height:.98!important}
+  .hero-mockup{min-height:850px!important}
+  .hero-mockup .hero-inner{width:calc(100% - 24px)!important}
+  .hero-mockup .hero-intro{font-size:12px!important}
+  .hero-mockup .hero-role{font-size:12px!important;letter-spacing:.12em!important}
+  .hero-mockup .hero-actions .btn{width:100%!important;min-width:0!important}
+  .hero-mockup .hero-socials{gap:9px!important}
+  .hero-mockup .hero-socials a{width:44px!important;height:44px!important}
+  .hero-mockup .hero-metrics .metrics{grid-template-columns:1fr 1fr!important}
+  .hero-mockup .hero-metrics .metric strong{font-size:21px!important}
+  .hero-mockup .hero-metrics .metric span{font-size:9px!important}
+  .work-project{padding:20px!important}
+  .work-tags,.experience-tags,.skill-tags{gap:6px!important}
+  .work-tags span,.experience-tags span,.skill-tags span{font-size:11px!important;padding:6px 8px!important}
+  .case-study-copy{padding:22px!important}
+  .case-study-copy h3{font-size:clamp(28px,8vw,40px)!important}
+  .case-study-visual{min-height:210px!important}
+  .experience-card{padding:20px!important}
+  .experience-header{gap:12px!important}
+  .company-copy h3{font-size:20px!important}
+  .employment-date{font-size:10px!important}
+  .domain-card{padding:22px!important}
+  .footer-main{grid-template-columns:1fr!important}
+  .footer-column{grid-column:auto!important}
+}
+
+@media (max-width:380px){
+  .hero-mockup h1{font-size:46px!important}
+  .hero-mockup .hero-metrics .metrics{grid-template-columns:1fr!important}
+  .hero-mockup .hero-metrics .metric{border-bottom:1px solid rgba(120,170,220,.12)!important}
+  .hero-mockup .hero-metrics .metric:last-child{border-bottom:0!important}
+  .section-head h2,.work-heading h2{font-size:36px!important}
+  .experience-card,.work-project,.toolkit-card{padding:18px!important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
