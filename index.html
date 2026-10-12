@@ -2704,7 +2704,42 @@ html[data-theme="light"] #toolkit .domain-list span{
   font-size:13px!important;
   line-height:1.55!important;
 }
-</style></head>
+</style><style id="matching-evidence-notes">
+/* Keep the Selected Work note visually consistent with the Evidence note */
+#work .work-note{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:14px 0 0;
+  padding:12px 16px;
+  border:1px solid rgba(0,157,255,.28);
+  border-radius:11px;
+  background:linear-gradient(145deg,rgba(8,20,33,.9),rgba(5,13,22,.94));
+  color:#a9bdd4;
+  font-size:10px;
+  line-height:1.7;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
+}
+#work .work-note:before{
+  content:"i";
+  flex:0 0 28px;
+  width:28px;
+  height:28px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#58b7ff;
+  color:#07121f;
+  font-size:13px;
+  font-weight:900;
+  line-height:1;
+}
+@media(max-width:760px){
+  #work .work-note{align-items:flex-start;padding:12px 14px}
+  #work .work-note:before{flex-basis:26px;width:26px;height:26px}
+}
+</style>
+</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
