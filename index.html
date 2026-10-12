@@ -3509,6 +3509,116 @@ main>section.wrap.section>.section-head{
   *,*:before,*:after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
 }
 </style>
+
+<style id="ui-expert-refinement">
+/* UI EXPERT REFINEMENT — hierarchy, density, rhythm */
+:root{--ui-content:1180px;--ui-soft:rgba(121,195,255,.07);--ui-border:rgba(166,195,230,.11)}
+.wrap{max-width:var(--ui-content)}
+.section{padding-block:96px}
+.surface-section+.surface-section{margin-top:0}
+.section-head{margin-bottom:42px}
+.section-head h2{max-width:820px}
+.section-kicker{letter-spacing:.16em}
+.section-head .section-intro,.section-head .education-intro,.toolkit-intro{max-width:650px}
+
+/* Reduce dashboard/card fatigue */
+.project,.execution-card,.case-study-card,.experience-card,.education-row,.skill-card,.domain-card{box-shadow:none}
+.project,.execution-card,.education-row,.skill-card,.domain-card{background:rgba(13,19,29,.72)}
+.project:hover,.execution-card:hover,.education-row:hover,.skill-card:hover,.domain-card:hover{transform:translateY(-2px);border-color:rgba(121,195,255,.28)}
+.project,.execution-card,.education-row,.skill-card,.domain-card{transition:transform .22s ease,border-color .22s ease,background .22s ease}
+
+/* Selected Work — clear focal hierarchy */
+#work .projects-grid{gap:16px}
+#work .project.featured{padding:30px}
+#work .project.featured h3{font-size:clamp(25px,3vw,38px);line-height:1.12}
+#work .project.featured .project-copy{max-width:650px}
+#work .project:not(.featured) h3{font-size:18px}
+#work .project .project-meta{margin-bottom:14px}
+
+/* Evidence — make proof the visual anchor */
+#evidence .execution-grid{gap:14px}
+#evidence .execution-card{padding:24px}
+#evidence .execution-card>strong{font-size:clamp(39px,4vw,54px);letter-spacing:-.065em;line-height:1}
+#evidence .evidence-bottom{margin-top:16px}
+
+/* Case study — editorial rather than another dashboard card */
+#case-studies .case-study-card{border-color:rgba(121,195,255,.16);background:linear-gradient(110deg,rgba(121,195,255,.045),rgba(13,19,29,.82))}
+#case-studies .case-study-copy{padding:34px}
+#case-studies .case-study-copy h3{font-size:clamp(28px,3.4vw,45px);line-height:1.08;letter-spacing:-.045em}
+#case-studies .case-study-copy p{max-width:560px}
+#case-studies .case-study-visual img{transition:transform .45s ease,filter .45s ease}
+#case-studies .case-study-card:hover .case-study-visual img{transform:scale(1.025);filter:saturate(1.06)}
+
+/* Experience — editorial density */
+#experience .experience-stack{gap:20px}
+#experience .experience-card{border-color:var(--ui-border);background:linear-gradient(145deg,rgba(15,23,34,.92),rgba(9,14,21,.82))}
+#experience .experience-header{padding-bottom:20px;border-bottom:1px solid var(--line)}
+#experience .experience-main{max-width:820px}
+#experience .experience-highlights{gap:10px}
+#experience .experience-highlights li{font-size:10.5px;line-height:1.75}
+#experience .experience-highlights li:nth-child(n+7){color:rgba(161,175,194,.86)}
+#experience .experience-side{border-left:1px solid var(--line);padding-left:22px}
+#experience .experience-tags{gap:6px}
+#experience .experience-tags span{font-size:8px;padding:5px 7px}
+
+/* Hide keyword-cloud feeling: keep only first 18 visible on primary experience */
+#experience .experience-card-primary .experience-tags span:nth-child(n+19){display:none}
+#experience .experience-card-secondary .experience-tags span:nth-child(n+15){display:none}
+
+/* Education — clean editorial list */
+#education .education-list{gap:0}
+#education .education-row{border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;padding:24px 0}
+#education .education-row:last-child{border-bottom:1px solid var(--line)}
+#education .education-arrow{opacity:.35}
+#education .education-kind{background:rgba(121,195,255,.045);border:1px solid var(--line);padding:5px 7px;border-radius:6px}
+
+/* Toolkit — hierarchy over decoration */
+#toolkit .toolkit-grid{gap:14px}
+#toolkit .toolkit-card{padding:23px}
+#toolkit .skill-tags{gap:6px}
+#toolkit .skill-tags span{font-size:8px}
+#toolkit .toolkit-domains{margin-top:54px;padding-top:28px;border-top:1px solid var(--line)}
+#toolkit .domain-heading h3{max-width:620px}
+#toolkit .domain-list{gap:10px}
+#toolkit .domain-card{padding:18px;background:rgba(13,19,29,.48)}
+
+/* Softer section alternation */
+#evidence,#education{background:linear-gradient(180deg,rgba(13,19,29,.18),rgba(8,11,17,0))}
+#case-studies{background:radial-gradient(circle at 78% 42%,rgba(44,113,181,.055),transparent 32%)}
+
+/* Better focus and hover polish */
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:6px}
+
+/* Mobile — deliberate composition */
+@media(max-width:760px){
+  .section{padding-block:72px}
+  .section-head{margin-bottom:30px}
+  #work .project.featured{padding:22px}
+  #work .project.featured h3{font-size:27px}
+  #evidence .execution-card{padding:20px}
+  #evidence .execution-card>strong{font-size:42px}
+  #case-studies .case-study-copy{padding:23px}
+  #case-studies .case-study-copy h3{font-size:31px}
+  #experience .experience-header{padding-bottom:16px}
+  #experience .experience-side{border-left:0;border-top:1px solid var(--line);padding:18px 0 0;margin-top:22px}
+  #experience .experience-highlights li:nth-child(n+7){display:none}
+  #education .education-row{grid-template-columns:36px 1fr auto;gap:10px;padding:19px 0}
+  #education .education-date{grid-column:2;grid-row:1;font-size:8px}
+  #education .education-detail{grid-column:2;grid-row:2}
+  #education .education-kind{grid-column:3;grid-row:1}
+  #education .education-arrow{display:none}
+  #toolkit .toolkit-domains{margin-top:38px}
+}
+@media(max-width:430px){
+  .section{padding-block:62px}
+  #work .project.featured h3{font-size:25px}
+  #evidence .execution-card>strong{font-size:38px}
+  #case-studies .case-study-copy h3{font-size:28px}
+  #experience .experience-highlights li{font-size:10px}
+  #toolkit .toolkit-card{padding:19px}
+}
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
