@@ -2629,7 +2629,40 @@ html[data-theme="light"] #toolkit .domain-list span{
   #evidence .execution-card{background-position:center}
 }
 </style>
-<style>#evidence .execution-card{border-radius:24px;border-color:#00bfff;box-shadow:0 0 20px #00bfff}</style></head>
+<style>#evidence .execution-card{border-radius:24px;border-color:#00bfff;box-shadow:0 0 20px #00bfff}</style><style id="evidence-card-neon-refinement">
+#evidence .execution-card{
+  border:3px solid #00aaff!important;
+  border-radius:20px!important;
+  box-shadow:0 0 0 1px rgba(0,170,255,.25),0 0 18px rgba(0,170,255,.16),inset 0 0 22px rgba(0,80,150,.10)!important;
+  transform:none!important;
+  transition:border-color .2s ease,box-shadow .2s ease!important;
+}
+#evidence .execution-card:hover{
+  border-color:#18c7ff!important;
+  box-shadow:0 0 0 1px rgba(24,199,255,.45),0 0 28px rgba(0,174,255,.48),0 0 58px rgba(0,126,255,.20),inset 0 0 26px rgba(0,130,220,.10)!important;
+  transform:none!important;
+}
+#evidence .execution-link{
+  align-self:flex-start;
+  margin-top:auto!important;
+  padding:10px 15px!important;
+  border:1px solid rgba(0,190,255,.72)!important;
+  border-radius:9px!important;
+  background:rgba(0,126,190,.10)!important;
+  color:#73d8ff!important;
+  font-size:10px!important;
+  font-weight:850!important;
+  line-height:1.2!important;
+  box-shadow:0 0 10px rgba(0,174,255,.10)!important;
+  transition:background .2s ease,border-color .2s ease,box-shadow .2s ease,color .2s ease!important;
+}
+#evidence .execution-link:hover{
+  background:rgba(0,174,255,.16)!important;
+  border-color:#35d0ff!important;
+  color:#fff!important;
+  box-shadow:0 0 16px rgba(0,190,255,.28)!important;
+}
+</style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
