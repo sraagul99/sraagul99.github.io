@@ -2160,10 +2160,7 @@ html[data-theme="light"] #toolkit .domain-list span{
   position:relative;
   display:grid;
   grid-template-columns:minmax(0,.92fr) minmax(420px,1.08fr);
-  grid-template-areas:
-    "copy visual"
-    "stats stats"
-    "evidence evidence";
+  grid-template-areas:"copy visual";
   gap:0;
   overflow:hidden;
   border:1px solid rgba(121,195,255,.18);
@@ -2368,7 +2365,7 @@ html[data-theme="light"] #toolkit .domain-list span{
 @media(max-width:900px){
   .case-study-feature{
     grid-template-columns:1fr;
-    grid-template-areas:"copy" "visual" "stats" "evidence";
+    grid-template-areas:"copy" "visual";
   }
   .case-study-copy{padding:42px 28px 28px}
   .case-study-visual{margin:0 20px 20px;min-height:300px}
@@ -2527,33 +2524,7 @@ html[data-theme="light"] .case-study-evidence-strip b{color:#20364d}
       <span class="case-study-visual-label">API TEST EVIDENCE</span>
     </div>
 
-    <div class="case-study-stats" aria-label="API testing execution summary">
-      <div>
-        <strong>24 <em>/ 24</em></strong>
-        <span>Assertions passed</span>
-      </div>
-      <div>
-        <strong>7</strong>
-        <span>Requests executed</span>
-      </div>
-      <div>
-        <strong>0</strong>
-        <span>Failures</span>
-      </div>
-      <div>
-        <strong>CI</strong>
-        <span>Execution verified</span>
-      </div>
-    </div>
-
-    <div class="case-study-evidence-strip">
-      <div>
-        <b>What the evidence covers</b>
-        <span>Contracts · negative paths · CRUD behaviour · repeatable Newman execution</span>
-      </div>
-      <a href="qa-case-study.html">Inspect the test design <span>↗</span></a>
-    </div>
-  </article>
+      </article>
 </div>
 </section>
 
