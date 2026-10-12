@@ -4264,6 +4264,50 @@ img{max-width:100%;height:auto}
   }
 }
 </style>
+<style id="floating-back-to-top">
+.back-to-top-float{
+  position:fixed!important;
+  right:28px!important;
+  bottom:28px!important;
+  z-index:9999!important;
+  width:50px!important;
+  height:50px!important;
+  display:grid!important;
+  place-items:center!important;
+  border:1px solid rgba(0,168,255,.65)!important;
+  border-radius:50%!important;
+  background:rgba(3,12,24,.78)!important;
+  color:#59b9ff!important;
+  font-size:25px!important;
+  font-weight:700!important;
+  line-height:1!important;
+  text-decoration:none!important;
+  box-shadow:0 8px 28px rgba(0,0,0,.35),0 0 18px rgba(0,157,255,.16)!important;
+  backdrop-filter:blur(8px)!important;
+  -webkit-backdrop-filter:blur(8px)!important;
+  transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease!important;
+}
+.back-to-top-float:hover{
+  transform:translateY(-4px)!important;
+  background:rgba(0,112,190,.9)!important;
+  color:#fff!important;
+  border-color:#36b7ff!important;
+  box-shadow:0 12px 30px rgba(0,0,0,.42),0 0 24px rgba(0,157,255,.3)!important;
+}
+.back-to-top-float:focus-visible{
+  outline:2px solid #fff!important;
+  outline-offset:3px!important;
+}
+@media(max-width:760px){
+  .back-to-top-float{
+    right:18px!important;
+    bottom:18px!important;
+    width:46px!important;
+    height:46px!important;
+    font-size:23px!important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -4510,6 +4554,8 @@ img{max-width:100%;height:auto}
     </div>
   </div>
 </footer>
+
+<a class="back-to-top-float" href="#top" aria-label="Back to top" title="Back to top">↑</a>
 <script>
 (()=>{const menuButton=document.querySelector('.menu-toggle');const nav=document.querySelector('#primary-nav');const year=document.querySelector('#year');
 document.documentElement.dataset.theme='dark';
