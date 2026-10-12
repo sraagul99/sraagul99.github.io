@@ -1230,28 +1230,6 @@ html[data-theme="light"] .hero-lede strong{color:#21384f}
 .hero-visual img{width:100%;height:100%;display:block;object-fit:cover;object-position:center center;opacity:.92}
 .hero-inner{position:static;z-index:auto}
 .hero-copy{position:relative;z-index:3}
-/* work-showcase redesign */
-.work-showcase{position:relative;overflow:hidden;border-top:1px solid rgba(121,195,255,.10);background:#050a12}
-.work-section{padding-block:72px 42px}
-.work-hero{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(440px,1.1fr);align-items:center;min-height:245px;padding:18px 0 34px;border-bottom:1px solid var(--line);overflow:hidden}
-.work-hero h2{font-size:48px;line-height:1.02;letter-spacing:-.055em;margin:12px 0 15px;position:relative;z-index:2}
-.work-hero h2 span{color:var(--blue)}
-.work-intro{max-width:620px;color:#c4d0df;font-size:15px;line-height:1.75;position:relative;z-index:2}
-.work-hero-visual{position:absolute;right:0;top:0;width:64%;height:100%;background:radial-gradient(circle at 65% 40%,rgba(0,133,255,.28),transparent 30%),linear-gradient(90deg,#050a12 0%,rgba(5,10,18,.72) 20%,rgba(5,10,18,.08) 70%),linear-gradient(135deg,#07111e,#061a2c);overflow:hidden}
-.work-hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,18,.1),#050a12 96%)}
-.hero-note{position:absolute;left:14%;top:28%;font-size:18px;line-height:1.25;color:#49c3ff;font-style:italic;transform:rotate(-4deg);text-shadow:0 0 16px rgba(0,157,255,.3)}
-.hero-dashboard{position:absolute;right:8%;top:18%;width:52%;height:62%;padding:12px;border:1px solid rgba(91,190,255,.35);border-radius:10px;background:rgba(3,11,21,.82);box-shadow:0 22px 60px rgba(0,0,0,.42);transform:perspective(900px) rotateY(-5deg)}
-.dash-head,.mini-top{display:flex;align-items:center;gap:7px;color:#93a9bf;font-size:8px;font-weight:800;letter-spacing:.12em}.dash-head i,.mini-top em{font-style:normal;color:#49c3ff;margin-left:auto}.dash-head i{width:5px;height:5px;border-radius:50%;background:#49c3ff;opacity:.8;margin-left:0}.dash-body{display:grid;grid-template-columns:1.1fr .9fr;gap:10px;height:calc(100% - 22px);padding-top:10px}.code-lines,.run-panel{border:1px solid rgba(121,195,255,.12);border-radius:7px;background:rgba(10,21,34,.8);padding:10px}.code-lines b{display:block;color:#dbe7f4;font-size:9px;margin-bottom:10px}.code-lines span{display:block;height:5px;margin:6px 0;border-radius:3px;background:linear-gradient(90deg,#168bd8 0 48%,transparent 48%)}.run-panel b{display:block;color:#dbe7f4;font-size:9px}.run-panel strong{display:block;margin-top:22px;color:#fff;font-size:24px}.run-panel small{color:#6edb9c;font-size:8px}.run-bar{height:5px;margin-top:13px;border-radius:5px;background:#28c77a;box-shadow:0 0 12px rgba(40,199,122,.35)}
-.showcase-projects{display:grid;gap:14px;padding-top:26px}
-.showcase-card{position:relative;display:grid;grid-template-columns:105px minmax(0,1fr) 245px 330px;gap:22px;align-items:center;min-height:205px;padding:20px 22px;border:1px solid rgba(121,195,255,.22);border-radius:16px;background:linear-gradient(145deg,rgba(8,18,30,.96),rgba(5,11,19,.98));box-shadow:0 18px 55px rgba(0,0,0,.20);overflow:hidden;transition:transform .22s,border-color .22s}
-.showcase-card:before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:2px;background:linear-gradient(180deg,transparent,#00a8ff 30%,#00a8ff 70%,transparent);box-shadow:0 0 16px rgba(0,157,255,.55)}
-.showcase-card:hover{transform:translateY(-3px);border-color:rgba(121,195,255,.42)}
-.project-rail{display:flex;flex-direction:column;align-items:flex-start;gap:9px;height:100%}.project-rail .project-icon{display:grid;place-items:center;width:58px;height:58px;border-radius:12px;border:1px solid rgba(121,195,255,.25);background:rgba(121,195,255,.06);color:var(--blue);font-size:14px;font-weight:850}.project-rail>span{font-size:8px;color:#6f86a0;font-weight:850;letter-spacing:.14em}.project-rail>strong{margin-top:auto;color:var(--blue);font-size:22px;letter-spacing:-.04em}
-.project-main h3{font-size:22px;line-height:1.2;margin:0 0 10px;letter-spacing:-.035em}.project-main p{color:#aebdce;font-size:11px;line-height:1.7;margin:0 0 13px;max-width:620px}.featured-label{display:inline-block;margin-bottom:7px;padding:4px 7px;border-radius:5px;background:#0b69b5;color:#fff;font-size:7px;font-weight:850;letter-spacing:.12em}.project-points{list-style:none;margin:0;padding:0;border-left:1px solid rgba(121,195,255,.16);padding-left:20px;color:#bdc9d8;font-size:10px;line-height:2.25}.project-points li:before{content:"↳";color:var(--blue);margin-right:8px}.showcase-card .tags{margin:0 0 12px}.showcase-card .tags span{border-color:rgba(121,195,255,.16);background:rgba(121,195,255,.035);color:#aebed2}.showcase-card .card-links{margin:0;padding:0;border:0;gap:15px}.showcase-card .card-links a{font-size:9px}.icon-link{width:31px;height:31px;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;color:#dce7f5!important;font-size:0!important}.icon-link:after{content:"●";font-size:11px;color:#fff}
-.project-visual{height:150px;border:1px solid rgba(121,195,255,.18);border-radius:10px;background:linear-gradient(145deg,#0a1725,#07101b);padding:10px;position:relative;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
-.project-visual .mini-top{padding-bottom:8px;border-bottom:1px solid rgba(121,195,255,.10)}.project-visual .mini-top em{margin-left:auto;color:#526c87}.test-list,.bdd-lines{display:grid;gap:7px;margin-top:10px}.test-list span,.bdd-lines span{display:flex;justify-content:space-between;padding:6px 7px;border-radius:5px;background:rgba(255,255,255,.025);font-size:8px;color:#b7c7d9}.test-list span:first-letter,.bdd-lines b{color:#37d58b}.pass-ring,.score{position:absolute;right:10px;bottom:10px;width:76px;height:76px;border-radius:50%;display:grid;place-items:center;align-content:center;border:7px solid rgba(55,213,139,.16);box-shadow:inset 0 0 0 2px #2bd47e}.pass-ring strong,.score strong{font-size:14px;color:#eaf5ff}.pass-ring small,.score small{font-size:7px;color:#6edb9c}.cypress-ui .bdd-lines{width:62%}.score{width:74px;height:74px}.score-bar{width:42px;height:4px;background:#2bd47e;margin-top:4px;border-radius:4px}.api-ui .mini-top b{padding:3px 6px;background:#168bd8;color:#fff;border-radius:4px;font-size:8px}.api-ui .mini-top em{background:#0e8bff;color:#fff;padding:4px 7px;border-radius:4px}.api-code{position:absolute;left:10px;bottom:10px;width:48%;padding:9px;border:1px solid rgba(121,195,255,.12);border-radius:6px;color:#8db4d7;font:8px/1.7 ui-monospace,monospace}.api-checks{position:absolute;right:10px;bottom:10px;width:42%;display:grid;gap:7px}.api-checks span{font-size:7px;color:#91d7b1}.note{margin:13px 0 0;color:var(--subtle);font-size:9px}
-@media(max-width:980px){.work-hero{grid-template-columns:1fr}.work-hero-visual{position:relative;width:100%;height:220px;margin-top:15px}.showcase-card{grid-template-columns:80px minmax(0,1fr) 250px}.showcase-card .project-visual{grid-column:2 / -1}.project-points{display:none}}
-@media(max-width:760px){.work-section{padding-block:50px 30px}.work-hero{min-height:0;padding-bottom:20px}.work-hero h2{font-size:36px}.work-hero-visual{height:190px}.hero-dashboard{width:65%;right:2%}.showcase-card{grid-template-columns:62px 1fr;gap:14px;padding:17px}.project-main{grid-column:2}.project-points{display:none}.project-visual{grid-column:1 / -1;width:100%;height:165px}.project-rail .project-icon{width:48px;height:48px}.project-rail>strong{font-size:18px}}
 </style>
 
 <style id="polish-selected-work">
@@ -2416,57 +2394,11 @@ html[data-theme="light"] #toolkit .domain-list span{
   </div>
 </section>
 
-<section class="work-showcase" id="work">
-<div class="wrap work-section">
-<div class="work-hero">
-  <div>
-    <p class="eyebrow">01 / SELECTED WORK</p>
-    <h2>Proof <span>in the practice.</span></h2>
-    <p class="work-intro">A collection of real-world QA and test automation projects that demonstrate my approach, skills and the value I bring to a team.</p>
-  </div>
-  <div class="work-hero-visual" aria-hidden="true">
-    <div class="hero-note">Test<br><b>Automate.</b><br>Validate.<br>Improve.</div>
-    <div class="hero-dashboard">
-      <div class="dash-head"><span>CI / TEST RUN</span><i></i><i></i><i></i></div>
-      <div class="dash-body"><div class="code-lines"><b>playwright.config.ts</b><span></span><span></span><span></span><span></span></div><div class="run-panel"><b>Tests</b><strong>24 / 24</strong><small>All checks passed</small><div class="run-bar"></div></div></div>
-    </div>
-  </div>
-</div>
-<div class="showcase-projects">
-<article class="showcase-card featured">
-  <div class="project-rail"><div class="project-icon">◆</div><span>UI AUTOMATION</span><strong>01</strong></div>
-  <div class="project-main">
-    <span class="featured-label">FEATURED</span><h3>Playwright UI Automation</h3>
-    <p>A TypeScript-based UI automation framework built around Playwright Test and the Page Object Model, with structured end-to-end coverage and a GitHub Actions workflow.</p>
-    <div class="tags"><span>TypeScript</span><span>Playwright</span><span>Page Object Model</span><span>CI/CD</span></div>
-    <div class="card-links"><a href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">View repository ↗</a><a href="https://github.com/sraagul99/playwright-ui-automation/actions" target="_blank" rel="noreferrer">CI runs ↗</a><a class="icon-link" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">GitHub</a></div>
-  </div>
-  <ul class="project-points"><li>Reusable page objects</li><li>Authentication flows</li><li>Employee-management scenarios</li></ul>
-  <div class="project-visual playwright-ui" aria-label="Playwright test execution preview"><div class="mini-top">PLAYWRIGHT TESTS <em>● ● ●</em></div><div class="test-list"><span>✓ Login.spec.ts <b>2s</b></span><span>✓ Employee.spec.ts <b>4s</b></span><span>✓ Roles.spec.ts <b>3s</b></span><span>✓ Settings.spec.ts <b>6s</b></span></div><div class="pass-ring"><strong>24/24</strong><small>Passed</small></div></div>
-</article>
-<article class="showcase-card">
-  <div class="project-rail"><div class="project-icon">CY</div><span>BDD AUTOMATION</span><strong>02</strong></div>
-  <div class="project-main">
-    <h3>Cypress + Cucumber BDD</h3><p>A behaviour-driven test suite using feature files and step definitions to keep scenarios readable while supporting repeatable browser validation.</p>
-    <div class="tags"><span>Cypress</span><span>Cucumber</span><span>Gherkin</span><span>CI/CD</span></div>
-    <div class="card-links"><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer">View repository ↗</a><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions" target="_blank" rel="noreferrer">CI runs ↗</a></div>
-  </div>
-  <ul class="project-points"><li>Gherkin feature scenarios</li><li>Reusable step definitions</li><li>Automated CI execution</li></ul>
-  <div class="project-visual cypress-ui" aria-label="Cypress BDD execution preview"><div class="mini-top">CYPRESS / CUCUMBER <em>● ● ●</em></div><div class="bdd-lines"><span><b>✓</b> Login.feature</span><span><b>✓</b> UserManagement.feature</span><span><b>✓</b> Roles.feature</span><span><b>✓</b> Organization.feature</span></div><div class="score"><strong>100%</strong><small>scenarios passed</small><div class="score-bar"></div></div></div>
-</article>
-<article class="showcase-card">
-  <div class="project-rail"><div class="project-icon">{ }</div><span>API TESTING</span><strong>03</strong></div>
-  <div class="project-main">
-    <h3>Postman + Newman API Testing</h3><p>An API-testing collection with response assertions and command-line execution, wired into CI to make repeatable API checks part of the workflow.</p>
-    <div class="tags"><span>Postman</span><span>Newman</span><span>REST APIs</span><span>CI/CD</span></div>
-    <div class="card-links"><a href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer">View repository ↗</a><a href="https://github.com/sraagul99/postman-newman-api-testing/actions" target="_blank" rel="noreferrer">CI runs ↗</a></div>
-  </div>
-  <ul class="project-points"><li>Request/response validation</li><li>Assertion-driven checks</li><li>CLI execution in GitHub Actions</li></ul>
-  <div class="project-visual api-ui" aria-label="Postman API validation preview"><div class="mini-top"><b>GET</b> api.example.com/users <em>SEND</em></div><div class="api-code"><span>{</span><span>&nbsp; "status": "success",</span><span>&nbsp; "data": [ ... ]</span><span>}</span></div><div class="api-checks"><span>✓ Status code is 200</span><span>✓ Response schema valid</span><span>✓ Required fields exist</span></div></div>
-</article>
-</div>
-<p class="note">ⓘ These repositories use public demo applications and APIs for portfolio practice. Test behaviour may change if those services are updated.</p>
-</div></section>
+<section class="wrap block" id="work"><div class="heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Proof in the practice.</h2></div><p class="intro"></p></div><div class="projects">
+<article class="card featured"><div class="card-top"><span class="project-icon">◈</span><span class="type">UI AUTOMATION</span><a class="arrow" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer" aria-label="Open Playwright repository">↗</a></div><h3>Playwright UI Automation</h3><p>A TypeScript-based UI automation framework built around Playwright Test and the Page Object Model, with structured end-to-end coverage and a GitHub Actions workflow.</p><ul class="points"><li>Reusable page objects</li><li>Authentication and navigation flows</li><li>Employee-management scenarios</li></ul><div class="tags"><span>Playwright</span><span>TypeScript</span><span>POM</span><span>GitHub Actions</span></div><div class="card-links"><a href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/playwright-ui-automation/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a></div></article>
+<article class="card"><div class="card-top"><span class="project-icon">⌘</span><span class="type">BDD AUTOMATION</span><a class="arrow" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer" aria-label="Open Cypress BDD repository">↗</a></div><h3>Cypress + Cucumber BDD</h3><p>A behaviour-driven test suite using feature files and step definitions to keep scenarios readable while supporting repeatable browser validation.</p><ul class="points"><li>Gherkin feature scenarios</li><li>Reusable Cucumber steps</li><li>Automated CI execution</li></ul><div class="tags"><span>Cypress</span><span>Cucumber</span><span>Gherkin</span><span>TypeScript</span></div><div class="card-links"><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a></div></article>
+<article class="card"><div class="card-top"><span class="project-icon">{ }</span><span class="type">API TESTING</span><a class="arrow" href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer" aria-label="Open API testing repository">↗</a></div><h3>Postman + Newman API Testing</h3><p>An API-testing collection with response assertions and command-line execution, wired into CI to make repeatable API checks part of the workflow.</p><ul class="points"><li>Request and response validation</li><li>Assertion-driven checks</li><li>CLI execution in GitHub Actions</li></ul><div class="tags"><span>Postman</span><span>Newman</span><span>REST APIs</span><span>CI</span></div><div class="card-links"><a href="https://github.com/sraagul99/postman-newman-api-testing" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/postman-newman-api-testing/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a></div></article>
+</div><p class="note">ⓘ These repositories use public demo applications and APIs for portfolio practice. Test behaviour may change if those services are updated.</p></section>
 <section class="surface-section" id="evidence"><div class="wrap section">
 <div class="section-head"><div><p class="section-kicker">02 / VERIFIED EXECUTION EVIDENCE</p><h2>Tested, executed, inspectable.</h2></div></div>
 <div class="execution-grid">
