@@ -743,6 +743,29 @@ body:before{
   -webkit-background-clip:initial;
   background-clip:initial;
 }
+
+/* Match all section headings to the Case Study master typography */
+#evidence .evidence-heading h2,
+#case-studies .case-study-heading h2,
+#experience .experience-heading h2,
+#education .section-head h2,
+#toolkit .section-head h2{
+  font-size:clamp(39px,5vw,64px);
+  line-height:1.04;
+  letter-spacing:-.075em;
+  font-weight:780;
+  color:var(--text);
+}
+#evidence .evidence-heading h2 span,
+#case-studies .case-study-heading h2 span,
+#experience .experience-heading h2 span,
+#education .section-head h2 span,
+#toolkit .section-head h2 span{
+  color:var(--blue);
+  background:none;
+  -webkit-background-clip:initial;
+  background-clip:initial;
+}
 </style>
 
 <style id="polish-selected-work">
