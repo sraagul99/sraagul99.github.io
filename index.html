@@ -580,6 +580,52 @@ body:before{
   #case-studies .case-study-card h3{margin-top:24px;font-size:34px}
   #case-studies .case-study-card>p{font-size:11px}
 }
+
+/* Recruiter-focused experience cards */
+.experience-heading h2 span{background:linear-gradient(100deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.experience-stack{display:grid;gap:14px}
+.experience-card{min-width:0;padding:22px;border:1px solid var(--line2);border-radius:17px;background:linear-gradient(145deg,rgba(13,20,30,.96),rgba(8,13,20,.96));box-shadow:0 16px 45px rgba(0,0,0,.12);overflow:hidden}
+.experience-card-primary{border-color:rgba(121,195,255,.28);box-shadow:inset 3px 0 0 rgba(121,195,255,.9),0 16px 45px rgba(0,0,0,.12)}
+.experience-card-secondary{border-color:rgba(255,113,136,.22);box-shadow:inset 3px 0 0 rgba(255,113,136,.78),0 16px 45px rgba(0,0,0,.1)}
+.experience-header{display:flex;align-items:center;gap:15px;min-width:0;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.experience-header .company-mark{flex:0 0 58px;width:58px;height:58px;display:grid;place-items:center;border:1px solid rgba(121,195,255,.28);border-radius:10px;background:rgba(121,195,255,.045);color:var(--text);font-weight:850;font-size:18px;letter-spacing:-.07em}
+.experience-card-secondary .experience-header .company-mark{border-color:rgba(255,113,136,.28)}
+.experience-header .company-copy h3{margin:0;font-size:19px;line-height:1.3;letter-spacing:-.035em}
+.experience-header .company-copy p{margin:4px 0 0;color:var(--blue);font-size:10px;font-weight:700}
+.experience-card-secondary .company-copy p{color:var(--blue)}
+.experience-body{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:24px;padding-top:18px}
+.experience-main{min-width:0}
+.experience-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:19px}
+.experience-metrics>div{min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.014)}
+.experience-metrics strong{display:block;color:#eaf3ff;font-size:17px;line-height:1.15;letter-spacing:-.04em}
+.experience-metrics span{display:block;margin-top:4px;color:var(--muted);font-size:8px;line-height:1.5}
+.experience-subheading{margin:0 0 11px;color:#dbe6f4;font-size:9px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+.experience-highlights{display:grid;gap:0;margin:0;padding:0;list-style:none}
+.experience-highlights li{position:relative;padding:0 0 11px 16px;margin:0 0 11px;border-bottom:1px solid var(--line);color:var(--muted);font-size:10px;line-height:1.78}
+.experience-highlights li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.experience-highlights li:before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px rgba(121,195,255,.22)}
+.experience-highlights b{color:#e0e9f6;font-weight:750}
+.experience-side{min-width:0;padding-left:22px;border-left:1px solid var(--line)}
+.experience-side .experience-subheading{margin-bottom:13px}
+.experience-tags{display:flex;flex-wrap:wrap;gap:8px}
+.experience-tags span{padding:7px 10px;border:1px solid rgba(121,195,255,.24);border-radius:999px;color:#dce9f8;background:rgba(121,195,255,.035);font-size:9px;line-height:1}
+.experience-card-secondary .experience-tags span{border-color:rgba(121,195,255,.2)}
+@media(max-width:760px){
+  .experience-body{grid-template-columns:1fr;gap:19px}
+  .experience-side{padding-left:0;padding-top:18px;border-left:0;border-top:1px solid var(--line)}
+}
+@media(max-width:560px){
+  .experience-card{padding:17px}
+  .experience-header{align-items:flex-start;flex-wrap:wrap}
+  .experience-header .company-mark{flex-basis:48px;width:48px;height:48px}
+  .experience-header .company-copy{flex:1;min-width:180px}
+  .experience-header .company-copy h3{font-size:16px}
+  .employment-date{margin-left:64px}
+  .experience-metrics{gap:6px}
+  .experience-metrics>div{padding:9px}
+  .experience-metrics strong{font-size:14px}
+  .experience-metrics span{font-size:7px}
+}
 </style>
 
 <style id="polish-selected-work">
@@ -2478,40 +2524,86 @@ html[data-theme="light"] #toolkit .domain-list span{
 </div></section>
 
 <section class="wrap section" id="experience">
-<div class="section-head"><div><p class="section-kicker">03 / EXPERIENCE</p><h2>Professional experience.</h2></div></div>
-<div class="experience-layout">
-<div class="work-history">
-<article class="experience-card">
-<div class="experience-top"><span class="company-mark">AZ</span><div class="company-copy"><h3>Azend Technologies Pvt Ltd</h3><p>Associate Quality Assurance Engineer · Colombo, Sri Lanka</p></div><span class="employment-date">APR 2024 — PRESENT</span></div>
-<div class="accomplishments-heading"><p class="section-kicker">ACCOMPLISHMENTS</p></div>
-<ul class="accomplishment-points">
-<li>Designed and executed test plans, test cases, and test scripts across 5 web-based projects, covering manual, automation, functional, regression, smoke, API, ad-hoc, and black-box testing.</li>
-<li>Developed and maintained 100+ automated test cases using Cypress, TypeScript, and Cucumber, improving regression coverage and reducing repetitive manual testing effort.</li>
-<li>Performed API testing, functional validation, regression testing, and deployment validation to verify application behavior against business and technical requirements.</li>
-<li>Investigated and tracked software defects throughout the testing lifecycle, performing defect analysis, debugging, root-cause investigation, and retesting to support effective resolution.</li>
-<li>Used Jira and Azure DevOps for test management, defect tracking, test execution, reporting, and Agile team collaboration.</li>
-<li>Collaborated with developers, clients, and cross-functional stakeholders to clarify requirements, communicate QA status, investigate issues, and provide quality-related feedback.</li>
-<li>Supported release and deployment validation activities, identifying high-risk areas, system limitations, and testing gaps to improve release confidence.</li>
-<li>Created and maintained QA documentation including test plans, test cases, defect reports, test procedures, execution results, and QA reports.</li>
-<li>Applied AI-assisted testing approaches and AI agents to support test analysis, test design, defect investigation, documentation, and QA workflow efficiency.</li>
-<li>Mentored junior QA interns on test case design, defect reporting, QA best practices, testing techniques, and Agile workflows, while supporting knowledge sharing within the QA team.</li>
-</ul>
-</article>
-<article class="experience-card">
-<div class="experience-top"><span class="company-mark">DI</span><div class="company-copy"><h3>:Different</h3><p>Quality Assurance Intern · Colombo, Sri Lanka</p></div><span class="employment-date">JUL 2022 — JUL 2023</span></div>
-<div class="accomplishments-heading"><p class="section-kicker">ACCOMPLISHMENTS</p></div>
-<ul class="accomplishment-points">
-<li>Designed and executed test cases based on system specifications, covering API, functional, and ad-hoc testing.</li>
-<li>Developed and maintained automated test scripts using Cypress to improve testing efficiency and coverage.</li>
-<li>Identified, documented, and tracked software defects while collaborating with developers to support timely resolution.</li>
-<li>Contributed to weekly automation objectives by developing and maintaining new automated test cases.</li>
-</ul>
-</article>
+<div class="section-head experience-heading">
+  <div>
+    <p class="section-kicker">03 / EXPERIENCE</p>
+    <h2>Professional <span>experience.</span></h2>
+  </div>
 </div>
 
+<div class="experience-stack">
+  <article class="experience-card experience-card-primary">
+    <div class="experience-header">
+      <span class="company-mark">AZ</span>
+      <div class="company-copy">
+        <h3>Azend Technologies Pvt Ltd</h3>
+        <p>Associate Quality Assurance Engineer · Colombo, Sri Lanka</p>
+      </div>
+      <span class="employment-date">APR 2024 — PRESENT</span>
+    </div>
+
+    <div class="experience-body">
+      <div class="experience-main">
+        <div class="experience-metrics" aria-label="Role highlights">
+          <div><strong>100+</strong><span>Automated tests</span></div>
+          <div><strong>5</strong><span>Web projects</span></div>
+          <div><strong>API + UI</strong><span>Testing</span></div>
+        </div>
+
+        <p class="experience-subheading">KEY ACHIEVEMENTS</p>
+        <ul class="experience-highlights">
+          <li>Developed and maintained <b>100+ automated test cases</b> using Cypress, TypeScript and Cucumber, improving regression coverage and reducing repetitive manual testing.</li>
+          <li>Performed <b>functional, regression, API, UI, system and end-to-end testing</b> across web applications.</li>
+          <li>Investigated and tracked software defects through <b>root-cause analysis, debugging and retesting</b> to support effective resolution.</li>
+          <li>Validated releases and deployments against business and technical requirements, identifying high-risk areas and testing gaps.</li>
+          <li>Created and maintained <b>test plans, test cases, defect reports and QA documentation</b> throughout the testing lifecycle.</li>
+          <li>Applied <b>AI-assisted testing approaches</b> to improve test analysis, design, defect investigation and QA workflow efficiency.</li>
+        </ul>
+      </div>
+
+      <aside class="experience-side">
+        <p class="experience-subheading">TECH STACK</p>
+        <div class="experience-tags">
+          <span>Cypress</span><span>Playwright</span><span>Postman</span>
+          <span>JavaScript</span><span>TypeScript</span><span>SQL</span>
+          <span>Git</span><span>GitHub</span><span>Azure DevOps</span>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <article class="experience-card experience-card-secondary">
+    <div class="experience-header">
+      <span class="company-mark">DI</span>
+      <div class="company-copy">
+        <h3>:Different</h3>
+        <p>Quality Assurance Intern · Colombo, Sri Lanka</p>
+      </div>
+      <span class="employment-date">JUL 2022 — JUL 2023</span>
+    </div>
+
+    <div class="experience-body">
+      <div class="experience-main">
+        <p class="experience-subheading">KEY ACHIEVEMENTS</p>
+        <ul class="experience-highlights">
+          <li>Designed and executed test cases based on system specifications, covering <b>API, functional and ad-hoc testing</b>.</li>
+          <li>Developed and maintained <b>Cypress automation scripts</b> to improve testing efficiency and coverage.</li>
+          <li>Identified, documented and tracked software defects while collaborating with developers to support timely resolution.</li>
+          <li>Contributed to automation objectives by developing and maintaining new automated test cases.</li>
+        </ul>
+      </div>
+
+      <aside class="experience-side">
+        <p class="experience-subheading">TECH STACK</p>
+        <div class="experience-tags">
+          <span>Cypress</span><span>JavaScript</span><span>Git</span>
+          <span>API Testing</span><span>Manual Testing</span><span>SQL</span>
+        </div>
+      </aside>
+    </div>
+  </article>
 </div>
-</section>
-<section class="surface-section" id="education"><div class="wrap section">
+</section><section class="surface-section" id="education"><div class="wrap section">
 <div class="section-head"><div><p class="section-kicker">04 / EDUCATION</p><h2>Education & certification.</h2></div></div>
 <ul class="education-list">
 <li class="education-row"><div class="education-date">2020 — 2024</div><div class="education-detail"><h3>Bachelor of Engineering (Hons) in Software Engineering</h3><p>Informatics Institute of Technology (IIT), affiliated with the University of Westminster</p></div><span class="education-kind">DEGREE</span></li>
