@@ -186,7 +186,7 @@ html[data-theme="light"] .theme-moon{opacity:1;transform:scale(1.06);color:#155f
 html[data-theme="light"] .theme-toggle{background:#ffffff;border-color:rgba(16,36,58,.18)}
 html[data-theme="light"] .theme-divider{background:rgba(16,36,58,.15)}
 .hero-copy{position:relative}
-.hero-copy:before{content:"";position:absolute;left:-28px;top:4px;width:2px;height:92px;border-radius:2px;background:linear-gradient(var(--blue),transparent);opacity:.7}
+.hero-copy:before{display:none !important;content:none !important}
 .hero-console,.project,.execution-card,.case-study-card,.experience-card,.education-row,.skill-card,.testing-step{box-shadow:0 1px 0 rgba(255,255,255,.025),0 16px 45px rgba(0,0,0,.08)}
 .project:hover,.execution-card:hover,.case-study-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.16),0 0 0 1px rgba(121,195,255,.08)}
 .project:after,.execution-card:after,.case-study-card:after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(121,195,255,.06),transparent 35%,rgba(116,240,228,.025));opacity:0;transition:opacity .25s}
@@ -3161,8 +3161,7 @@ html[data-theme="light"] #toolkit .domain-list span{
   border:0;
   border-radius:0;
   background:
-    linear-gradient(90deg,rgba(5,10,17,.98) 0%,rgba(5,10,17,.92) 42%,rgba(5,10,17,.48) 72%,rgba(5,10,17,.82) 100%),
-    linear-gradient(180deg,rgba(5,10,17,.08),rgba(5,10,17,.84)),
+    linear-gradient(90deg,rgba(5,10,17,.82) 0%,rgba(5,10,17,.68) 38%,rgba(5,10,17,.24) 72%,rgba(5,10,17,.58) 100%),
     url("assets/Neon%20QA%20Night%20Workstation.png") center/cover no-repeat;
 }
 #toolkit .toolkit-hero-head:after{
