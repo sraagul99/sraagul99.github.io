@@ -640,6 +640,18 @@ body:before{
   .experience-highlights-polished li{grid-template-columns:1fr;row-gap:5px;padding:12px 0}
   .achievement-label{min-height:0}
 }
+
+/* Refine achievement rows to read as single flowing statements */
+.experience-highlights-polished li{display:block;white-space:normal;padding:12px 0;margin:0;border-bottom:1px solid var(--line);font-size:10px;line-height:1.65}
+.experience-highlights-polished li:last-child{padding-bottom:0;border-bottom:0}
+.experience-highlights-polished li:before{display:none}
+.experience-highlights-polished .achievement-label{display:inline-flex;vertical-align:middle;margin-right:22px;min-height:0}
+.experience-highlights-polished li span:last-child{display:inline;color:#aebdce}
+.experience-highlights-polished li b{color:#e7f0fc;font-weight:750}
+@media(max-width:620px){
+  .experience-highlights-polished .achievement-label{display:flex;margin:0 0 4px}
+  .experience-highlights-polished li span:last-child{display:inline}
+}
 </style>
 
 <style id="polish-selected-work">
