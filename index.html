@@ -2206,7 +2206,24 @@ html[data-theme="light"] #toolkit .domain-list span{
   position:relative!important;
   z-index:3!important;
 }
+</style><style id="hero-background-visible-fix">
+.hero-mockup{
+  background:#020712 url("assets/Cinematic%20QA%20Engineer%20Tech%20Workspace%20%281%29.png") center center / cover no-repeat !important;
+}
+.hero-mockup:before{
+  z-index:0 !important;
+  background:
+    linear-gradient(90deg,rgba(1,5,13,.78) 0%,rgba(1,8,20,.48) 34%,rgba(0,10,25,.18) 64%,rgba(1,5,13,.60) 100%) !important;
+}
+.hero-mockup:after{
+  z-index:1 !important;
+  background:
+    linear-gradient(180deg,rgba(1,5,13,.04),transparent 66%,rgba(2,7,18,.68) 100%),
+    linear-gradient(90deg,transparent 0 49.8%,rgba(0,151,255,.06) 50%,transparent 50.2%) !important;
+}
+.hero-mockup .hero-inner{z-index:2 !important;}
 </style>
+
 
 </head>
 <body>
