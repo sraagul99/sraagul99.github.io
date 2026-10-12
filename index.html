@@ -2438,19 +2438,22 @@ html[data-theme="light"] #toolkit .domain-list span{
 #work .work-icon.logo-postman{background:rgba(255,255,255,.97);overflow:hidden}
 #work .work-icon.logo-postman img{width:100%;height:100%;object-fit:contain;display:block}
 </style><style id="selected-work-user-assets">
+/* User-supplied workspace artwork sits directly behind the Selected Work heading — no card/container treatment. */
 #work .work-heading{
   position:relative;
-  min-height:300px;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:365px;
   display:flex;
-  align-items:flex-end;
+  align-items:center;
   overflow:hidden;
-  padding:42px 46px 38px;
-  border:1px solid rgba(121,195,255,.2);
-  border-radius:18px;
+  padding:70px max(28px,calc((100vw - var(--max)) / 2)) 58px;
+  border:0;
+  border-radius:0;
   background:
-    linear-gradient(90deg,rgba(3,8,15,.96) 0%,rgba(3,8,15,.78) 34%,rgba(3,8,15,.18) 72%,rgba(3,8,15,.28) 100%),
+    linear-gradient(90deg,rgba(3,8,15,.97) 0%,rgba(3,8,15,.86) 27%,rgba(3,8,15,.42) 58%,rgba(3,8,15,.08) 100%),
     url("assets/Neon%20Code%20and%20Quality%20Workspace.png") center center / cover no-repeat;
-  box-shadow:inset 0 0 80px rgba(0,0,0,.32),0 22px 60px rgba(0,0,0,.22);
+  box-shadow:none;
 }
 #work .work-heading>div{position:relative;z-index:1;max-width:700px}
 #work .work-heading .eyebrow{margin-bottom:13px}
@@ -2460,7 +2463,7 @@ html[data-theme="light"] #toolkit .domain-list span{
 @media(max-width:760px){
   #work .work-heading{
     min-height:330px;
-    padding:30px 24px;
+    padding:54px 24px 48px;
     align-items:flex-end;
     background-position:center;
   }
