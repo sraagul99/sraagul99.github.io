@@ -2996,6 +2996,80 @@ html[data-theme="light"] #toolkit .domain-list span{
   #education .education-arrow{display:none !important}
 }
 </style>
+<style id="education-layout-fix">
+#education .education-row{
+  display:grid !important;
+  grid-template-columns:150px minmax(0,1fr) auto 28px !important;
+  gap:24px !important;
+  align-items:center !important;
+  min-height:120px !important;
+  padding:24px 28px 24px 72px !important;
+}
+#education .education-icon{
+  position:absolute !important;
+  left:18px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:42px !important;
+  height:42px !important;
+  margin:0 !important;
+}
+#education .education-row:before{
+  left:24px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:9px !important;
+  height:9px !important;
+  z-index:2 !important;
+}
+#education .education-date{
+  grid-column:1 !important;
+  grid-row:1 !important;
+}
+#education .education-detail{
+  grid-column:2 !important;
+  grid-row:1 !important;
+}
+#education .education-kind{
+  grid-column:3 !important;
+  grid-row:1 !important;
+}
+#education .education-arrow{
+  grid-column:4 !important;
+  grid-row:1 !important;
+}
+@media(max-width:760px){
+  #education .education-row{
+    display:grid !important;
+    grid-template-columns:1fr auto !important;
+    gap:8px 14px !important;
+    padding:18px 18px 18px 68px !important;
+  }
+  #education .education-icon{
+    left:16px !important;
+    top:22px !important;
+    transform:none !important;
+  }
+  #education .education-row:before{
+    left:22px !important;
+    top:42px !important;
+    transform:none !important;
+  }
+  #education .education-date{
+    grid-column:1 !important;
+    grid-row:1 !important;
+  }
+  #education .education-kind{
+    grid-column:2 !important;
+    grid-row:1 !important;
+  }
+  #education .education-detail{
+    grid-column:1 / -1 !important;
+    grid-row:2 !important;
+  }
+  #education .education-arrow{display:none !important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
