@@ -2403,7 +2403,18 @@ html[data-theme="light"] .case-study-stats>div{border-left-color:rgba(23,105,209
 html[data-theme="light"] .case-study-evidence-strip{background:rgba(23,105,209,.02);border-top-color:rgba(23,105,209,.08)}
 html[data-theme="light"] .case-study-evidence-strip b{color:#20364d}
 </style>
-</head>
+<style id="case-study-heading-refinement">
+.case-study-heading{margin-bottom:28px}
+.case-study-heading h2{margin:0;color:var(--text);font-size:clamp(42px,5.1vw,68px);line-height:1.03;letter-spacing:-.065em}
+.case-study-heading h2 span{color:var(--blue)}
+.case-study-heading-subtitle{margin:13px 0 0;color:var(--muted);font-size:14px;line-height:1.75;max-width:760px}
+.case-study-heading:after{bottom:-13px;width:54px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent);opacity:.75}
+@media(max-width:760px){
+  .case-study-heading{margin-bottom:22px}
+  .case-study-heading h2{font-size:38px}
+  .case-study-heading-subtitle{font-size:12px;line-height:1.7}
+}
+</style>\n</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
@@ -2478,8 +2489,8 @@ html[data-theme="light"] .case-study-evidence-strip b{color:#20364d}
 <div class="wrap section case-study-section">
   <div class="section-head case-study-heading">
     <div>
-      <p class="section-kicker">QA CASE STUDY</p>
-      <h2>Practical testing, backed by evidence.</h2>
+      <h2>Practical testing, backed by <span>evidence.</span></h2>
+      <p class="case-study-heading-subtitle">A real example of how I design, execute, and validate tests in a practical QA scenario.</p>
     </div>
   </div>
 
