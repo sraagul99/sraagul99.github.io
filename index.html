@@ -910,6 +910,39 @@ body:before{
     background-position:center;
   }
 }
+
+/* Experience heading — match Selected Work with user's Midnight Workspace artwork */
+#experience .experience-heading{
+  position:relative;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:365px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:70px max(28px,calc((100vw - var(--max)) / 2)) 58px;
+  border:0;
+  border-radius:0;
+  background:
+    linear-gradient(90deg,rgba(3,8,15,.97) 0%,rgba(3,8,15,.88) 25%,rgba(3,8,15,.50) 55%,rgba(3,8,15,.10) 100%),
+    url("assets/Neon%20Coder%E2%80%99s%20Midnight%20Workspace.png") center center / cover no-repeat;
+  box-shadow:none;
+}
+#experience .experience-heading>div{
+  position:relative;
+  z-index:1;
+  max-width:700px;
+}
+#experience .experience-heading .section-kicker{margin-bottom:13px}
+#experience .experience-heading h2{margin-bottom:12px}
+@media(max-width:760px){
+  #experience .experience-heading{
+    min-height:330px;
+    padding:54px 24px 48px;
+    align-items:flex-end;
+    background-position:center;
+  }
+}
 </style>
 
 <style id="polish-selected-work">
