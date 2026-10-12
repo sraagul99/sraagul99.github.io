@@ -2568,52 +2568,65 @@ html[data-theme="light"] #toolkit .domain-list span{
 #evidence .execution-state{color:#72ead1}
 #evidence .section-kicker{color:#00d9ff}
 </style><style id="evidence-image-composition">
+/* Refined evidence artwork: image-led, but never competing with the content. */
 #evidence{
   position:relative;
   overflow:hidden;
   background:
-    linear-gradient(90deg,rgba(3,8,15,.96) 0%,rgba(3,8,15,.72) 34%,rgba(3,8,15,.18) 67%,rgba(3,8,15,.38) 100%),
+    linear-gradient(90deg,rgba(2,7,13,.985) 0%,rgba(2,7,13,.94) 28%,rgba(2,7,13,.62) 55%,rgba(2,7,13,.30) 78%,rgba(2,7,13,.58) 100%),
     url("assets/Neon%20QA%20Automation%20Workspace.png") center center / cover no-repeat;
 }
 #evidence:before{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(180deg,rgba(3,8,15,.12) 0%,rgba(3,8,15,.08) 42%,rgba(3,8,15,.86) 100%);
+  background:
+    linear-gradient(180deg,rgba(2,7,13,.28) 0%,rgba(2,7,13,.04) 35%,rgba(2,7,13,.62) 100%),
+    radial-gradient(circle at 78% 18%,rgba(0,174,255,.10),transparent 32%);
   pointer-events:none;
 }
 #evidence .evidence-section{position:relative;z-index:1}
+#evidence .evidence-heading{max-width:920px}
+#evidence .execution-grid{
+  gap:14px;
+  background:transparent;
+  border:0;
+  overflow:visible;
+}
 #evidence .execution-card{
+  isolation:isolate;
   background:
-    linear-gradient(90deg,rgba(4,13,23,.93) 0%,rgba(4,13,23,.72) 52%,rgba(4,13,23,.30) 100%),
-    var(--card-art) center center / cover no-repeat;
-  background-blend-mode:normal;
+    linear-gradient(90deg,rgba(4,11,19,.985) 0%,rgba(4,11,19,.94) 35%,rgba(4,11,19,.70) 62%,rgba(4,11,19,.34) 100%),
+    var(--card-art) center / cover no-repeat;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 12px 32px rgba(0,0,0,.22);
+}
+#evidence .execution-card:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.10),rgba(0,0,0,.28));
+  pointer-events:none;
+  z-index:0;
 }
 #evidence .execution-card:after{
   content:"";
   position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,rgba(2,8,15,.22),rgba(2,8,15,.04));
+  left:0;right:0;bottom:0;height:42%;
+  background:linear-gradient(180deg,transparent,rgba(1,6,11,.72));
   pointer-events:none;
   z-index:0;
 }
 #evidence .execution-card>*{position:relative;z-index:2}
-#evidence .execution-card:nth-child(1){
-  --card-art:url("assets/Neon%20Playwright%20Test%20Lab.png");
-}
-#evidence .execution-card:nth-child(2){
-  --card-art:url("assets/Neon%20Cypress%20BDD%20Testing%20Workspace.png");
-}
-#evidence .execution-card:nth-child(3){
-  --card-art:url("assets/Neon%20Postman%20API%20Testing%20Workspace.png");
-}
-#evidence .execution-card:nth-child(1){border-color:rgba(0,190,255,.62)}
-#evidence .execution-card:nth-child(2){border-color:rgba(0,190,255,.62)}
-#evidence .execution-card:nth-child(3){border-color:rgba(255,126,54,.58)}
+#evidence .execution-card:nth-child(1){--card-art:url("assets/Neon%20Playwright%20Test%20Lab.png")}
+#evidence .execution-card:nth-child(2){--card-art:url("assets/Neon%20Cypress%20BDD%20Testing%20Workspace.png")}
+#evidence .execution-card:nth-child(3){--card-art:url("assets/Neon%20Postman%20API%20Testing%20Workspace.png")}
+#evidence .execution-card:nth-child(1),
+#evidence .execution-card:nth-child(2){border-color:rgba(0,190,255,.42)!important}
+#evidence .execution-card:nth-child(3){border-color:rgba(255,126,54,.42)!important}
+#evidence .execution-card:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 18px 42px rgba(0,132,255,.16)}
 @media(max-width:760px){
-  #evidence{
-    background-position:center top;
-  }
+  #evidence{background-position:center top}
+  #evidence .execution-card{background-position:center}
 }
 </style>
 </head>
