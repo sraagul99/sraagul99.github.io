@@ -3137,6 +3137,18 @@ html[data-theme="light"] #toolkit .domain-list span{
 #education .education-arrow{display:none !important;width:0 !important;height:0 !important;overflow:hidden !important}
 #education .education-row{grid-template-columns:150px minmax(0,1fr) auto !important}
 </style>
+<style>/* Final education title image visibility fix */
+#education > .section-head{
+  background-image:
+    linear-gradient(90deg,rgba(3,8,15,.82) 0%,rgba(3,8,15,.62) 30%,rgba(3,8,15,.20) 62%,rgba(3,8,15,.10) 100%),
+    url("assets/Neon%20QA%20Study%20Workspace.png") !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+#education > .section-head::before,
+#education > .section-head::after{pointer-events:none !important}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
