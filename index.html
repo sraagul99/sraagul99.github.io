@@ -1257,7 +1257,7 @@ html[data-theme="light"] .hero-lede strong{color:#21384f}
 #work .card-links a span{color:var(--blue)}
 #work .note{margin:15px 0 0;color:var(--dim);font-size:9px;line-height:1.8}
 @media(max-width:760px){#work .projects{grid-template-columns:1fr}#work .card.featured{grid-column:auto}#work .card{padding:21px}#work .card h3{font-size:19px}}
-</style>
+.hero{grid-template-columns:minmax(0,1fr) minmax(330px,.72fr);gap:72px}.hero-metrics{width:100%}.hero-metrics .metric-strip{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.018);box-shadow:0 18px 50px rgba(0,0,0,.16);overflow:hidden}.hero-metrics .metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));padding:12px}.hero-metrics .metric{padding:22px 20px;border-left:1px solid var(--line);border-top:1px solid var(--line)}.hero-metrics .metric:nth-child(1),.hero-metrics .metric:nth-child(2){border-top:0}.hero-metrics .metric:nth-child(odd){border-left:0}.hero-metrics .metric strong{font-size:30px}.hero-metrics .metric span{font-size:8px;letter-spacing:.15em}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:42px}.hero-metrics{max-width:620px}.hero-metrics .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}</style>
 
 <style id="polish-selected-work">
 /* POLISHED SELECTED WORK — preserves the restored first-version structure */
@@ -2418,8 +2418,18 @@ html[data-theme="light"] #toolkit .domain-list span{
       </div>
     </div>
   </div>
+    <div class="hero-metrics" aria-label="QA experience highlights">
+      <div class="metric-strip">
+        <div class="metrics">
+          <div class="metric"><strong>3<em>+</em></strong><span>Years in QA</span></div>
+          <div class="metric"><strong>5</strong><span>Web projects tested</span></div>
+          <div class="metric"><strong>100<em>+</em></strong><span>Automated test cases</span></div>
+          <div class="metric"><strong>3</strong><span>Public QA repositories</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<div class="metric-strip"><div class="wrap metrics"><div class="metric"><strong>3<em>+</em></strong><span>Years in QA</span></div><div class="metric"><strong>5</strong><span>Web projects tested</span></div><div class="metric"><strong>100<em>+</em></strong><span>Automated test cases</span></div><div class="metric"><strong>3</strong><span>Public QA repositories</span></div></div></div>
 <section class="wrap block" id="work"><div class="heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Proof in the practice.</h2></div><p class="intro"></p></div><div class="projects">
 <article class="card featured"><div class="card-top"><span class="project-icon">◈</span><span class="type">UI AUTOMATION</span><a class="arrow" href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer" aria-label="Open Playwright repository">↗</a></div><h3>Playwright UI Automation</h3><p>A TypeScript-based UI automation framework built around Playwright Test and the Page Object Model, with structured end-to-end coverage and a GitHub Actions workflow.</p><ul class="points"><li>Reusable page objects</li><li>Authentication and navigation flows</li><li>Employee-management scenarios</li></ul><div class="tags"><span>Playwright</span><span>TypeScript</span><span>POM</span><span>GitHub Actions</span></div><div class="card-links"><a href="https://github.com/sraagul99/playwright-ui-automation" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/playwright-ui-automation/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a></div></article>
 <article class="card"><div class="card-top"><span class="project-icon">⌘</span><span class="type">BDD AUTOMATION</span><a class="arrow" href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer" aria-label="Open Cypress BDD repository">↗</a></div><h3>Cypress + Cucumber BDD</h3><p>A behaviour-driven test suite using feature files and step definitions to keep scenarios readable while supporting repeatable browser validation.</p><ul class="points"><li>Gherkin feature scenarios</li><li>Reusable Cucumber steps</li><li>Automated CI execution</li></ul><div class="tags"><span>Cypress</span><span>Cucumber</span><span>Gherkin</span><span>TypeScript</span></div><div class="card-links"><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript" target="_blank" rel="noreferrer">View repository <span>↗</span></a><a href="https://github.com/sraagul99/cypress-bdd-cucumber-typescript/actions" target="_blank" rel="noreferrer">CI runs <span>↗</span></a></div></article>
