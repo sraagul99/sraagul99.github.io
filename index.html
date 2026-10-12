@@ -3945,6 +3945,22 @@ img{max-width:100%;height:auto}
 <style id="nav-font-size-15">
 .site-header .nav{font-size:15px!important}
 </style>
+<style id="hero-image-visibility-fix">
+/* Keep the cinematic portrait above the hero background but below the content. */
+.hero-mockup{position:relative!important;isolation:isolate!important;overflow:hidden!important}
+.hero-mockup:before{
+  z-index:0!important;
+  background-image:
+    linear-gradient(90deg,rgba(1,5,13,.78) 0%,rgba(1,8,20,.46) 34%,rgba(0,10,25,.08) 68%,rgba(1,5,13,.30) 100%),
+    url("assets/Cinematic%20Nighttime%20Tech%20Workspace%20Portrait.png")!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+.hero-mockup:after{z-index:1!important}
+.hero-mockup .hero-inner,
+.hero-mockup .hero-backdrop{position:relative!important;z-index:2!important}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
