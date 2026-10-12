@@ -4047,6 +4047,51 @@ img{max-width:100%;height:auto}
   }
 }
 </style>
+<style id="full-bleed-heading-alignment-fix">
+/* Center full-bleed banner headings against the viewport, not their .wrap parent.
+   This prevents the left edge from cutting off the first letters of section titles. */
+#work .work-heading,
+#experience .experience-heading,
+#education .section-head,
+#toolkit .toolkit-hero-head{
+  position:relative!important;
+  left:50%!important;
+  width:100vw!important;
+  max-width:100vw!important;
+  margin-left:0!important;
+  margin-right:0!important;
+  transform:translateX(-50%)!important;
+  box-sizing:border-box!important;
+  padding-left:max(28px,calc((100vw - var(--max)) / 2))!important;
+  padding-right:max(28px,calc((100vw - var(--max)) / 2))!important;
+  overflow:hidden!important;
+}
+#work .work-heading>div,
+#experience .experience-heading>div,
+#education .section-head>div,
+#toolkit .toolkit-hero-head>div{
+  width:100%!important;
+  max-width:700px!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+#work .work-heading h2,
+#experience .experience-heading h2,
+#education .section-head h2,
+#toolkit .toolkit-hero-head h2{
+  max-width:100%!important;
+  overflow-wrap:normal!important;
+}
+@media(max-width:760px){
+  #work .work-heading,
+  #experience .experience-heading,
+  #education .section-head,
+  #toolkit .toolkit-hero-head{
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
