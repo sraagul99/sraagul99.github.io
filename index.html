@@ -14,7 +14,8 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Raagul Sivanathan","jobTitle":"Quality Assurance Engineer","url":"https://sraagul99.github.io/","sameAs":["https://www.linkedin.com/in/sraagul","https://github.com/sraagul99"],"email":"mailto:raagul.s@outlook.com","alumniOf":{"@type":"CollegeOrUniversity","name":"Informatics Institute of Technology"}}
-
+</script>
+<script>
 /* Lightweight reveal — respects reduced motion */
 (()=>{
   const items=document.querySelectorAll('.surface-section,.work-project,.experience-card,.education-row,.skill-card');
@@ -2072,7 +2073,7 @@ html[data-theme="light"] #toolkit .domain-list strong{
 html[data-theme="light"] #toolkit .domain-list span{
   color:#526477 !important;
 }
-
+</style>
 <style id="light-mode-contrast-fix">
 /* LIGHT MODE — high-contrast editorial text system */
 html[data-theme="light"]{
@@ -3395,6 +3396,119 @@ html[data-theme="light"] #toolkit .domain-list span{
   .footer-tagline{order:0;width:auto}
 }
 </style>
+<style id="sitewide-responsive-quality-pass">
+/* Sitewide layout consistency and overflow safeguards */
+html{scroll-padding-top:88px}
+body{max-width:100%;overflow-x:hidden}
+main,main>section,.surface-section,.wrap,.section{min-width:0}
+img,svg,video,canvas,iframe{max-width:100%}
+button,a{touch-action:manipulation}
+a:focus-visible,button:focus-visible{outline:2px solid #35b8ff;outline-offset:4px}
+main>.surface-section>.wrap.section,
+main>section.wrap.section{
+  padding-top:clamp(58px,6.2vw,92px) !important;
+  padding-bottom:clamp(58px,6.2vw,92px) !important;
+}
+main>.surface-section>.wrap.section>.section-head,
+main>section.wrap.section>.section-head{
+  margin-bottom:clamp(24px,3vw,38px);
+}
+#education .section-head{margin-bottom:32px}
+#toolkit .toolkit-hero-head{margin-bottom:26px}
+#toolkit .toolkit-intro{max-width:760px}
+#toolkit .toolkit-card,#toolkit .domain-card,
+#evidence .execution-card,#case-studies .case-study-card,
+#experience .experience-card,#education .education-row{min-width:0}
+#toolkit .toolkit-card-head>div,
+#toolkit .toolkit-card-head h3,
+#toolkit .toolkit-card-head p,
+#education .education-detail,
+#experience .company-copy{min-width:0;overflow-wrap:anywhere}
+#education .education-detail h3{overflow-wrap:anywhere}
+.footer-column a{min-height:24px;display:inline-flex;align-items:center}
+@media(max-width:980px){
+  .wrap{width:calc(100% - 44px)}
+  #case-studies .case-study-feature{grid-template-columns:minmax(0,1fr) minmax(0,.85fr)}
+  #case-studies .case-study-visual{min-width:0}
+  #toolkit .toolkit-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+@media(max-width:760px){
+  html{scroll-padding-top:76px}
+  .wrap{width:calc(100% - 36px)}
+  main>.surface-section>.wrap.section,
+  main>section.wrap.section{
+    padding-top:58px !important;
+    padding-bottom:58px !important;
+  }
+  main>.surface-section>.wrap.section>.section-head,
+  main>section.wrap.section>.section-head{margin-bottom:25px}
+  .site-header{backdrop-filter:blur(12px)}
+  .header-inner{gap:12px}
+  .brand{min-width:0;gap:8px}
+  .brand-text{min-width:0}
+  .brand-text strong{font-size:clamp(8px,2.1vw,10px);letter-spacing:.08em;white-space:nowrap}
+  .nav{max-height:calc(100dvh - 90px);overflow-y:auto}
+  .hero{min-width:0}
+  .hero>*{min-width:0;width:100%}
+  .hero-console{width:100%}
+  .hero-metrics{margin-left:0 !important}
+  .hero-metrics .metrics{width:100%}
+  .hero-metrics .metric{min-width:0}
+  .hero-metrics .metric span{letter-spacing:.06em;line-height:1.5}
+  .section-head h2,.contact h2,.heading h2{overflow-wrap:anywhere}
+  #evidence .execution-grid{grid-template-columns:1fr}
+  #evidence .execution-card{min-width:0}
+  #case-studies .case-study-feature{
+    grid-template-columns:minmax(0,1fr) !important;
+    min-height:0 !important;
+  }
+  #case-studies .case-study-copy{padding:26px !important}
+  #case-studies .case-study-visual{min-height:210px;max-height:300px}
+  #case-studies .case-study-visual img{width:100%;height:100%;object-fit:cover}
+  #experience .experience-header{gap:12px}
+  #experience .employment-date{white-space:normal;max-width:100%}
+  #education .section-head{min-height:300px;padding:42px 22px !important}
+  #education .education-row{grid-template-columns:minmax(0,1fr) auto !important}
+  #education .education-detail{grid-column:1/-1 !important}
+  #education .education-kind{max-width:100%;white-space:normal;text-align:right}
+  #toolkit .toolkit-hero-head{min-height:300px;padding:30px 22px !important}
+  #toolkit .toolkit-hero-head h2{font-size:clamp(36px,8.4vw,48px) !important;line-height:1.05;overflow-wrap:normal}
+  #toolkit .toolkit-grid{grid-template-columns:1fr !important}
+  #toolkit .toolkit-card{padding:22px !important}
+  #toolkit .toolkit-domains .domain-list{grid-template-columns:1fr !important}
+  .footer-main{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 22px !important}
+  .footer-identity{grid-column:1/-1}
+  .footer-column a{width:auto;max-width:100%;overflow-wrap:anywhere}
+}
+@media(max-width:430px){
+  .wrap{width:calc(100% - 28px)}
+  .header-inner{height:65px}
+  .brand-mark{width:32px;height:32px;flex:0 0 32px}
+  .brand-text strong{font-size:8px;letter-spacing:.055em}
+  .menu-toggle{flex:0 0 40px}
+  .hero{padding-top:44px;gap:26px}
+  .hero h1{font-size:clamp(38px,11vw,46px)}
+  .hero-actions .btn{width:100%}
+  .hero-metrics .metrics{column-gap:0}
+  .hero-metrics .metric{padding-inline:9px}
+  .hero-metrics .metric strong{font-size:20px}
+  .signal{grid-template-columns:32px minmax(0,1fr);gap:8px}
+  .signal-value{grid-column:2;justify-self:start}
+  #case-studies .case-study-copy{padding:21px !important}
+  #education .education-row{padding:18px 16px !important}
+  #education .education-date{font-size:8px}
+  #toolkit .toolkit-card-head{grid-template-columns:42px minmax(0,1fr) !important;gap:12px !important}
+  #toolkit .toolkit-icon{width:42px;height:42px}
+  #toolkit .skill-tags span{max-width:100%;overflow-wrap:anywhere}
+  .footer-main{grid-template-columns:1fr !important;gap:24px !important}
+  .footer-identity{grid-column:auto}
+  .footer-bottom{align-items:flex-start;flex-direction:column;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -3618,7 +3732,7 @@ html[data-theme="light"] #toolkit .domain-list span{
       <div class="footer-column">
         <span class="footer-label">NAVIGATE</span>
         <a href="#work">Selected work</a>
-        <a href="#test-evidence">Test evidence</a>
+        <a href="#evidence">Test evidence</a>
         <a href="#case-studies">Case studies</a>
       </div>
       <div class="footer-column">
