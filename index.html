@@ -3838,6 +3838,47 @@ img{max-width:100%;height:auto}
   .experience-card,.work-project,.toolkit-card{padding:18px!important}
 }
 </style>
+<style id="hero-nav-safe-zone">
+/* Keep the navigation in its own safe band so it never obscures the portrait */
+.hero-mockup{
+  min-height:100svh!important;
+  height:auto!important;
+  padding-top:190px!important;
+  background-position:center bottom!important;
+  background-size:cover!important;
+}
+.hero-mockup .hero-inner{
+  min-height:calc(100svh - 190px)!important;
+  padding-top:0!important;
+  align-items:center!important;
+}
+.hero-mockup .hero-copy{
+  position:relative!important;
+  z-index:4!important;
+}
+.hero-mockup .hero-metrics{
+  z-index:5!important;
+}
+@media(max-width:900px){
+  .hero-mockup{
+    padding-top:150px!important;
+    background-position:center bottom!important;
+  }
+  .hero-mockup .hero-inner{
+    min-height:calc(100svh - 150px)!important;
+  }
+}
+@media(max-width:760px){
+  .hero-mockup{
+    padding-top:125px!important;
+    min-height:850px!important;
+    background-position:center bottom!important;
+  }
+  .hero-mockup .hero-inner{
+    min-height:0!important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
