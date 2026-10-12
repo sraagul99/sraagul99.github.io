@@ -672,6 +672,42 @@ body:before{
 /* Position-first experience hierarchy */
 .experience-header .company-copy h3{font-size:20px;font-weight:800}
 .experience-header .company-copy p{font-size:10px;font-weight:650;color:var(--blue)}
+
+/* Unified section title system — matched to Selected Work */
+#evidence .evidence-heading,
+#case-studies .case-study-heading,
+#experience .experience-heading,
+#education .section-head,
+#toolkit .section-head{margin-bottom:34px}
+#evidence .evidence-heading h2,
+#case-studies .case-study-heading h2,
+#experience .experience-heading h2,
+#education .section-head h2,
+#toolkit .section-head h2{
+  margin:0 0 13px;
+  font-size:clamp(36px,4.4vw,52px);
+  line-height:1.04;
+  letter-spacing:-.06em;
+  color:var(--text);
+}
+#evidence .evidence-heading h2 span,
+#case-studies .case-study-heading h2 span,
+#experience .experience-heading h2 span,
+#education .section-head h2 span,
+#toolkit .section-head h2 span{color:var(--blue)}
+#evidence .section-kicker,
+#case-studies .section-kicker,
+#experience .section-kicker,
+#education .section-kicker,
+#toolkit .section-kicker{
+  margin:0 0 12px;
+  color:var(--cyan);
+  font-size:8px;
+  line-height:1.2;
+  letter-spacing:.2em;
+  font-weight:800;
+}
+#case-studies .case-study-heading-line{display:none}
 </style>
 
 <style id="polish-selected-work">
