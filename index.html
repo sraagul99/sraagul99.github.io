@@ -3268,7 +3268,23 @@ html[data-theme="light"] #toolkit .domain-list span{
   min-height:135px !important;padding:21px 18px !important;
   display:flex !important;flex-direction:column !important;justify-content:center !important;
   background:rgba(17,28,41,.72) !important;
+  position:relative !important;overflow:hidden !important;
+  transition:transform .25s ease,background .25s ease,box-shadow .25s ease !important;
 }
+#toolkit .toolkit-domains .domain-card:after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(20,168,255,.10),transparent 55%);
+  opacity:0;transition:opacity .25s ease;pointer-events:none;
+}
+#toolkit .toolkit-domains .domain-card:hover{
+  transform:translateY(-3px) !important;
+  background:rgba(22,35,50,.94) !important;
+  box-shadow:inset 0 2px 0 rgba(24,174,255,.95),0 10px 28px rgba(0,0,0,.22) !important;
+}
+#toolkit .toolkit-domains .domain-card:hover:after{opacity:1}
+#toolkit .toolkit-domains .domain-card:hover strong{color:#eef8ff !important}
+#toolkit .toolkit-domains .domain-card:hover span{color:#c6d7e9 !important}
+#toolkit .toolkit-domains .domain-card:hover small{color:#8da5bd !important}
 #toolkit .toolkit-domains .domain-card strong{font-size:11px !important;margin-bottom:5px !important}
 #toolkit .toolkit-domains .domain-card span{font-size:9px !important;line-height:1.6 !important}
 #toolkit .toolkit-domains .domain-card small{display:block;margin-top:10px;color:#71849a;font-size:8px;line-height:1.55}
