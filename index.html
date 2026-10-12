@@ -3708,6 +3708,29 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
   }
 }
 </style>
+<style id="hero-centered-portrait">
+/* Center the portrait across the entire hero — do not pin it to the right */
+.hero-mockup{
+  background-color:#020712 !important;
+  background-image:url("assets/Cinematic%20Nighttime%20Tech%20Workspace%20Portrait.png") !important;
+  background-size:100% auto !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+}
+.hero-mockup:before{
+  background:linear-gradient(90deg,rgba(1,5,13,.90) 0%,rgba(1,8,20,.58) 34%,rgba(0,10,25,.16) 65%,rgba(1,5,13,.38) 100%) !important;
+  z-index:1 !important;
+}
+.hero-mockup .hero-visual{
+  display:none !important;
+}
+@media(max-width:900px){
+  .hero-mockup{
+    background-size:auto 100% !important;
+    background-position:center center !important;
+  }
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
