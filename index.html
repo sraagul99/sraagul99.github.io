@@ -4322,6 +4322,60 @@ img{max-width:100%;height:auto}
   .site-header{position:absolute!important}
 }
 </style>
+<style id="site-typography-scale-final">
+/* Consistent typography scale across the portfolio */
+:root{
+  --type-body:clamp(15px,1vw,17px);
+  --type-small:12px;
+  --type-label:11px;
+  --type-card-title:clamp(21px,1.65vw,27px);
+  --type-section-title:clamp(42px,4.2vw,64px);
+}
+html{font-size:16px!important}
+body{font-size:var(--type-body)!important;line-height:1.7!important}
+.site-header .brand-text strong{font-size:clamp(20px,1.8vw,30px)!important;line-height:1.1!important}
+.site-header .nav a{font-size:15px!important;line-height:1.35!important}
+.hero-mockup .hero-intro{font-size:clamp(13px,1vw,16px)!important;line-height:1.6!important}
+.hero-mockup .hero-role{font-size:clamp(13px,.95vw,15px)!important;line-height:1.5!important}
+.hero-mockup h1{font-size:clamp(54px,7vw,100px)!important;line-height:.98!important;letter-spacing:-.055em!important}
+.hero-mockup .hero-lede{font-size:clamp(16px,1.25vw,19px)!important;line-height:1.75!important}
+.section-head h2,.work-heading h2,#experience .experience-heading h2,#education .section-head h2,#toolkit .toolkit-hero-head h2{
+  font-size:var(--type-section-title)!important;
+  line-height:1.04!important;
+  letter-spacing:-.055em!important;
+}
+#work .project.featured h3,#case-studies .case-study-copy h3{font-size:var(--type-card-title)!important;line-height:1.2!important;letter-spacing:-.035em!important}
+#experience .company-copy h3,#experience .experience-card h3{font-size:clamp(20px,1.7vw,26px)!important;line-height:1.25!important}
+#education .education-detail h3,#education .education-row h3{font-size:clamp(17px,1.3vw,21px)!important;line-height:1.35!important}
+#toolkit .toolkit-card h3,#toolkit .domain-heading h3{font-size:clamp(18px,1.4vw,22px)!important;line-height:1.3!important}
+#work .project p,#evidence p,#case-studies p,#experience p,#education p,#toolkit p,
+#work .project-copy,#case-studies .case-study-copy{font-size:var(--type-body)!important;line-height:1.75!important}
+#experience .experience-highlights li{font-size:13px!important;line-height:1.65!important}
+#experience .experience-tags span,#toolkit .skill-tags span,#toolkit .toolkit-tags span{font-size:11px!important;line-height:1.35!important}
+#education .education-date,#education .education-kind{font-size:11px!important;line-height:1.4!important}
+#work .project-meta,#evidence .evidence-label,#evidence .execution-card small,.section-kicker,.eyebrow,
+#work .work-heading .section-label,#experience .experience-heading .section-label{font-size:11px!important;line-height:1.5!important;letter-spacing:.12em!important}
+#evidence .execution-card>strong{font-size:clamp(36px,4vw,52px)!important;line-height:1.05!important}
+.footer-column a,.footer-bottom,.footer-tagline{font-size:13px!important;line-height:1.6!important}
+@media(max-width:760px){
+  body{font-size:15px!important;line-height:1.7!important}
+  .site-header .brand-text strong{font-size:clamp(16px,4.5vw,22px)!important;letter-spacing:.12em!important}
+  .site-header .nav a{font-size:14px!important}
+  .hero-mockup h1{font-size:clamp(44px,11vw,66px)!important;line-height:1!important}
+  .hero-mockup .hero-lede{font-size:16px!important;line-height:1.65!important}
+  .section-head h2,.work-heading h2,#experience .experience-heading h2,#education .section-head h2,#toolkit .toolkit-hero-head h2{font-size:clamp(34px,8.5vw,48px)!important;line-height:1.05!important}
+  #work .project.featured h3,#case-studies .case-study-copy h3{font-size:clamp(22px,5.8vw,29px)!important;line-height:1.2!important}
+  #experience .company-copy h3{font-size:20px!important}
+  #experience .experience-highlights li{font-size:13px!important}
+  #experience .experience-tags span,#toolkit .skill-tags span,#toolkit .toolkit-tags span{font-size:11px!important}
+  #education .education-detail h3,#education .education-row h3{font-size:17px!important}
+  #education .education-date,#education .education-kind{font-size:10px!important}
+}
+@media(max-width:380px){
+  .hero-mockup h1{font-size:42px!important}
+  .section-head h2,.work-heading h2,#experience .experience-heading h2,#education .section-head h2,#toolkit .toolkit-hero-head h2{font-size:32px!important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
