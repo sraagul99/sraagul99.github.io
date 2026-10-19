@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#080b11" id="theme-color">
-<meta name="description" content="Raagul Sivanathan — Quality Assurance Engineer with 3+ years in manual and automation testing. Explore UI automation, BDD, API testing, and QA practice.">
+<meta name="description" content="Raagul Sivanathan — ISTQB® Certified Tester Foundation Level (CTFL) Quality Assurance Engineer with 3.5 years in manual and automation testing, API validation, and release testing.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Raagul Sivanathan | Quality Engineering Portfolio">
 <meta property="og:description" content="Quality is engineered, not assumed. Manual QA, automation, API validation, and release confidence.">
@@ -4376,6 +4376,20 @@ body{font-size:var(--type-body)!important;line-height:1.7!important}
   .section-head h2,.work-heading h2,#experience .experience-heading h2,#education .section-head h2,#toolkit .toolkit-hero-head h2{font-size:32px!important}
 }
 </style>
+<style id="about-certification-update">
+.about-section{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(115deg,rgba(121,195,255,.035),transparent 55%)}
+.about-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:start}
+.about-heading h2{max-width:480px;margin:12px 0 18px;font-size:clamp(30px,3.5vw,43px);line-height:1.15;letter-spacing:-.055em}
+.about-heading h2 span{color:var(--blue)}
+.about-position{margin:0;color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.about-copy p{margin:0 0 15px;color:var(--muted);font-size:12px;line-height:1.95}
+.about-copy p strong{color:var(--text);font-weight:700}
+.about-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:21px}
+.about-tags span{padding:7px 10px;border:1px solid var(--line2);border-radius:999px;color:#dbe8f7;background:rgba(255,255,255,.02);font-size:9px;font-weight:750}
+#education .istqb-certification .education-kind{color:var(--cyan);border-color:rgba(116,240,228,.55);background:rgba(116,240,228,.05)}
+#education .istqb-certification .education-icon{color:var(--cyan)}
+@media(max-width:760px){.about-grid{grid-template-columns:1fr;gap:22px}.about-heading h2{font-size:34px}.about-copy p{font-size:12px}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -4384,7 +4398,7 @@ body{font-size:var(--type-body)!important;line-height:1.7!important}
 <a class="brand" href="#top" aria-label="Raagul Sivanathan home"><span class="brand-mark brand-logo" aria-hidden="true"><img src="assets/Glossy Neon Blue Monogram App Icon.png" alt=""></span><span class="brand-text"><strong>RAAGUL SIVANATHAN</strong><small>QUALITY ENGINEERING</small></span></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">☰</button>
 <nav class="nav" id="primary-nav" aria-label="Main navigation">
-<a href="#work">Selected work</a><a href="#evidence">Test evidence</a><a href="#case-studies">Case studies</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#toolkit">Toolkit</a>
+<a href="#about">About me</a><a href="#work">Selected work</a><a href="#evidence">Test evidence</a><a href="#case-studies">Case studies</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#toolkit">Toolkit</a>
 </nav>
 </div>
 </header>
@@ -4409,6 +4423,24 @@ body{font-size:var(--type-body)!important;line-height:1.7!important}
       </div>
     </div>
     <div class="hero-metrics" aria-label="QA metrics"><div class="metric-strip"><div class="wrap metrics"><div class="metric"><strong>3<em>+</em></strong><span>Years in QA</span></div><div class="metric"><strong>5</strong><span>Web projects tested</span></div><div class="metric"><strong>100<em>+</em></strong><span>Automated test cases</span></div><div class="metric"><strong>3</strong><span>Public QA repositories</span></div></div></div></div>
+  </div>
+</section>
+
+<section class="surface-section about-section" id="about" aria-labelledby="about-title">
+  <div class="wrap section">
+    <div class="about-grid">
+      <div class="about-heading">
+        <p class="section-kicker">ABOUT ME</p>
+        <h2 id="about-title">Quality built on <span>curiosity and evidence.</span></h2>
+        <p class="about-position">ISTQB® CTFL · Quality Assurance Engineer</p>
+      </div>
+      <div class="about-copy">
+        <p>I’m a Quality Assurance Engineer with <strong>3.5 years of experience</strong> in manual and automation testing of web applications. I approach quality through thoughtful test design, risk-focused validation, and clear, reproducible defect reporting.</p>
+        <p>My hands-on experience includes functional and regression testing, API validation, and end-to-end testing, alongside automation with <strong>Cypress, TypeScript, and Cucumber</strong>. I also work with Jira and Azure DevOps to support defect investigation, root-cause analysis, release validation, and collaboration within Agile teams.</p>
+        <p>I’m continually strengthening my automation and API testing practice with Playwright, Postman, and Newman. My goal is to help teams identify issues earlier, improve test coverage, and release reliable software with confidence.</p>
+        <div class="about-tags" aria-label="Core strengths"><span>Manual QA</span><span>Test Automation</span><span>API Testing</span><span>Agile Collaboration</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -4540,6 +4572,7 @@ body{font-size:var(--type-body)!important;line-height:1.7!important}
 </section><section class="surface-section" id="education">
 <div class="section-head"><div><p class="section-kicker">EDUCATION</p><h2>Education & <span>certification.</span></h2><p class="education-intro">A strong foundation in software engineering, supported by continuous professional learning and industry-recognized certification.</p></div></div>
 <div class="wrap section"><ul class="education-list">
+<li class="education-row education-certification istqb-certification"><span class="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.5 14.4 5l2.8-.1.7 2.7 2 2-1.2 2.5.4 2.8-2.6 1.1-1.6 2.3-2.7-.8-2.7.8-1.6-2.3-2.6-1.1.4-2.8-1.2-2.5 2-2 .7-2.7 2.8.1L12 3.5Z"/><path d="m8.5 12 2.2 2.2 4.8-4.8M9 17.5l-.5 3 3.5-1.8 3.5 1.8-.5-3"/></svg></span><div class="education-date">2026</div><div class="education-detail"><h3>ISTQB® Certified Tester Foundation Level (CTFL)</h3><p>Sri Lanka Software Testing Board (SLSTB) · Official certification</p></div><span class="education-kind">CERTIFIED</span><span class="education-arrow">→</span></li>
 <li class="education-row education-certification"><span class="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 3.5h12v12H6z"/><path d="M9 7h6M9 10h6M9 13h3"/><path d="m15.5 17 2 3 1.5-1 1.5 1-2-3"/></svg></span><div class="education-date">SEP 2024</div><div class="education-detail"><h3>LambdaTest Test Automation Professional</h3><p>Professional certification validating automation testing knowledge and skills.</p><a href="https://www.linkedin.com/in/sraagul" target="_blank" rel="noreferrer">View LinkedIn profile ↗</a></div><span class="education-kind">CERTIFICATION</span><span class="education-arrow">→</span></li>
 <li class="education-row"><span class="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="m3 9 9-4 9 4-9 4-9-4Z"/><path d="M7 11.5v4c2.7 2 7.3 2 10 0v-4"/><path d="M21 10v5"/></svg></span><div class="education-date">2020 — 2024</div><div class="education-detail"><h3>Bachelor of Engineering (Hons) in Software Engineering</h3><p>Informatics Institute of Technology (IIT), affiliated with the University of Westminster</p></div><span class="education-kind">DEGREE</span><span class="education-arrow">→</span></li>
 <li class="education-row"><span class="education-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 11h8M8 14h5"/></svg></span><div class="education-date">2019 — 2020</div><div class="education-detail"><h3>Foundation Certificate in Higher Education</h3><p>Informatics Institute of Technology (IIT)</p></div><span class="education-kind">FOUNDATION</span><span class="education-arrow">→</span></li>
